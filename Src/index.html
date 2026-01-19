@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Lashes - Extensiones de Pestañas y Cursos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/LUXE LASHES 3.png" />
+</head>
+<style>
+    /* Reset y Variables - TEMA OSCURO ELEGANTE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colores de la paleta adaptados para tema oscuro */
+    --cream: #FFFEEB;
+    --beige: #DEC897;
+    --black: #000000;
+    --taupe: #C3B19D;
+    --pink: #EFE7DC;
+    --gray: #EDF2F5;
+    
+    /* Colores oscuros armónicos */
+    --dark-bg: #1a1614;
+    --dark-secondary: #2a2420;
+    --dark-tertiary: #3a3430;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--cream);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.logo,
+h1,
+h2,
+.footer-logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(26, 22, 20, 0.95);
+    backdrop-filter: blur(10px);
+    color: var(--cream);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(222, 200, 151, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo img {
+        max-width: 11rem;
+        height: auto;
+        display: block;
+      }
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    color: var(--cream);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--beige);
+    transition: width 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--beige);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--beige);
+    position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: var(--beige);
+    transition: 0.3s;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-secondary) 50%, var(--dark-tertiary) 100%);
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(222, 200, 151, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(195, 177, 157, 0.06) 0%, transparent 50%);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 60px 0;
+}
+
+.hero-text h1 {
+    font-size: 62px;
+    color: var(--beige);
+    margin-bottom: 24px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 20px rgba(222, 200, 151, 0.2);
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: var(--taupe);
+    margin-bottom: 32px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--beige) 0%, var(--taupe) 100%);
+    color: var(--dark-bg);
+    box-shadow: 0 4px 15px rgba(222, 200, 151, 0.3);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(222, 200, 151, 0.4);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--beige);
+    border: 2px solid var(--beige);
+}
+
+.btn-secondary:hover {
+    background-color: var(--beige);
+    color: var(--dark-bg);
+    transform: scale(1.05);
+}
+
+.btn-small {
+    padding: 12px 28px;
+    font-size: 14px;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 500px;
+    background-color: var(--dark-secondary);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 40px rgba(222, 200, 151, 0.1);
+    border: 1px solid rgba(222, 200, 151, 0.1);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.decoration-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.4;
+    filter: blur(40px);
+}
+
+.circle-1 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--beige);
+    bottom: -50px;
+    right: -50px;
+}
+
+.circle-2 {
+    width: 150px;
+    height: 150px;
+    background-color: var(--taupe);
+    top: -40px;
+    left: -40px;
+}
+
+/* Services Section */
+.services {
+    padding: 100px 0;
+    background: var(--dark-secondary);
+    position: relative;
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--beige), transparent);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 52px;
+    color: var(--beige);
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 20px rgba(222, 200, 151, 0.2);
+}
+
+.section-header p {
+    font-size: 18px;
+    color: var(--taupe);
+    font-weight: 400;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.service-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--dark-tertiary);
+    border: 1px solid rgba(222, 200, 151, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+                0 0 30px rgba(222, 200, 151, 0.1);
+    border-color: rgba(222, 200, 151, 0.3);
+}
+
+.service-image {
+    position: relative;
+    aspect-ratio: 3/4;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(26, 22, 20, 0.95), transparent 50%, rgba(26, 22, 20, 0.3));
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.service-card:hover .service-overlay {
+    opacity: 0.95;
+}
+
+.service-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    color: white;
+}
+
+.service-content h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--beige);
+}
+
+.service-description {
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s;
+    margin-bottom: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: var(--cream);
+}
+
+.service-card:hover .service-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-content .btn {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s;
+    background: linear-gradient(135deg, var(--beige) 0%, var(--taupe) 100%);
+    color: var(--dark-bg);
+}
+
+.service-card:hover .service-content .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Courses Section */
+.courses {
+    padding: 100px 0;
+    background: var(--dark-bg);
+    position: relative;
+}
+
+.courses::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--beige), transparent);
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.course-card {
+    background: var(--dark-secondary);
+    border: 1px solid rgba(222, 200, 151, 0.1);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.course-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+                0 0 30px rgba(222, 200, 151, 0.1);
+    transform: translateY(-5px);
+    border-color: rgba(222, 200, 151, 0.3);
+}
+
+.course-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+  
+    padding: 8px;
+    box-shadow: 0 4px 15px rgba(222, 200, 151, 0.3);
+}
+
+.course-number img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.course-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--beige);
+}
+
+.course-duration {
+    color: var(--taupe);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.course-description {
+    color: rgba(255, 254, 235, 0.7);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--beige);
+}
+
+.courses-benefits {
+    background: linear-gradient(135deg, var(--dark-secondary) 0%, var(--dark-tertiary) 100%);
+    border: 1px solid rgba(222, 200, 151, 0.2);
+    border-radius: 20px;
+    padding: 48px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.courses-benefits h3 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    font-family: 'Pacifico', cursive;
+    color: var(--beige);
+    text-shadow: 0 4px 20px rgba(222, 200, 151, 0.2);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+}
+
+.benefit-value {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--beige);
+}
+
+.benefit-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 auto 16px;
+    display: block;
+}
+
+.benefit-item p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cream);
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+    background: var(--dark-secondary);
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--beige), transparent);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 16px;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--beige) 0%, var(--taupe) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(222, 200, 151, 0.3);
+}
+
+.contact-icon svg {
+    stroke: var(--dark-bg);
+}
+
+.contact-item h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--beige);
+}
+
+.contact-item p {
+    color: var(--taupe);
+    font-weight: 400;
+}
+
+.social-media h3 {
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--beige);
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--beige) 0%, var(--taupe) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-bg);
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(222, 200, 151, 0.3);
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(222, 200, 151, 0.4);
+}
+
+.social-icon svg {
+    stroke: var(--dark-bg);
+}
+
+.contact-form {
+    background: var(--dark-tertiary);
+    border: 1px solid rgba(222, 200, 151, 0.1);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid rgba(222, 200, 151, 0.2);
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s;
+    background-color: var(--dark-secondary);
+    color: var(--cream);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--beige);
+    box-shadow: 0 0 0 3px rgba(222, 200, 151, 0.1);
+}
+
+.form-input::placeholder {
+    color: var(--taupe);
+    font-weight: 400;
+}
+
+textarea.form-input {
+    resize: vertical;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-bg);
+    color: var(--cream);
+    padding: 60px 0 30px;
+    border-top: 1px solid rgba(222, 200, 151, 0.1);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: var(--beige);
+    text-shadow: 0 2px 10px rgba(222, 200, 151, 0.3);
+}
+
+.footer-col p {
+    color: var(--taupe);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.footer-col h4 {
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--beige);
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: var(--taupe);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 400;
+}
+
+.footer-col ul li a:hover {
+    color: var(--beige);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(222, 200, 151, 0.1);
+    padding-top: 20px;
+    text-align: center;
+    color: var(--taupe);
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: rgba(26, 22, 20, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        gap: 0;
+        padding: 20px;
+        display: none;
+        border-bottom: 1px solid rgba(222, 200, 151, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(222, 200, 151, 0.1);
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .image-wrapper {
+        height: 400px;
+    }
+
+    .section-header h2 {
+        font-size: 38px;
+    }
+
+    .services-grid,
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .courses-benefits {
+        padding: 32px 20px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+}
+</style>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+             <a href="index.html">
+          <div class="logo">
+            <img src="img/LUXE LASHES 1.png" alt="TROPEX" />
+          </div>
+        </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#cursos" class="nav-link">Cursos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Realza tu Belleza Natural</h1>
+                    <p>Especialistas en extensiones de pestañas y formación profesional. 
+                    Transforma miradas con nuestros tratamientos de alta calidad y aprende 
+                    de los mejores en nuestros cursos certificados.</p>
+                    <div class="hero-buttons">
+                        <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                        <a href="#cursos" class="btn btn-secondary">Nuestros Cursos</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=800&fit=crop" alt="Luxe Lashes">
+                    </div>
+                    <div class="decoration-circle circle-1"></div>
+                    <div class="decoration-circle circle-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Tratamientos profesionales para realzar tu belleza</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-service="1">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=400&h=600&fit=crop" alt="Extensiones Clásicas">
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <h3>Extensiones de Pestañas Clásicas</h3>
+                            <p class="service-description">Realza tu mirada con extensiones pestaña por pestaña para un look natural y elegante</p>
+                            <button class="btn btn-small">Reservar Cita</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="2">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&h=600&fit=crop" alt="Volumen Ruso">
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <h3>Volumen Ruso</h3>
+                            <p class="service-description">Técnica avanzada que crea pestañas más densas y dramáticas con múltiples extensiones</p>
+                            <button class="btn btn-small">Reservar Cita</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="3">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=400&h=600&fit=crop" alt="Lifting de Pestañas">
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <h3>Lifting de Pestañas</h3>
+                            <p class="service-description">Curl permanente que levanta y define tus pestañas naturales hasta por 8 semanas</p>
+                            <button class="btn btn-small">Reservar Cita</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="4">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&h=600&fit=crop" alt="Diseño de Cejas">
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <h3>Diseño de Cejas</h3>
+                            <p class="service-description">Perfilado, tinte y laminado para cejas perfectamente definidas</p>
+                            <button class="btn btn-small">Reservar Cita</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="cursos" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cursos Profesionales</h2>
+                <p>Conviértete en experta con nuestra certificación profesional</p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div><img src="Img/LUXE LASHES 3.png" class="course-number"></div>
+                    <h3>Curso Básico de Extensiones</h3>
+                    <p class="course-duration">Duración: 2 días</p>
+                    <p class="course-description">Aprende la técnica clásica de aplicación pestaña por pestaña</p>
+                    <div class="course-footer">
+                        <span class="course-price">Consultar</span>
+                        <button class="btn btn-small">Más Info</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div><img src="Img/LUXE LASHES 3.png" class="course-number"></div>
+                    <h3>Curso Volumen Ruso</h3>
+                    <p class="course-duration">Duración: 3 días</p>
+                    <p class="course-description">Domina la técnica avanzada de volumen 2D-6D</p>
+                    <div class="course-footer">
+                        <span class="course-price">Consultar</span>
+                        <button class="btn btn-small">Más Info</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div><img src="Img/LUXE LASHES 3.png"  class="course-number"></div>
+                    <h3>Curso Lifting & Laminado</h3>
+                    <p class="course-duration">Duración: 1 día</p>
+                    <p class="course-description">Especialízate en tratamientos de curl y laminado</p>
+                    <div class="course-footer">
+                        <span class="course-price">Consultar</span>
+                        <button class="btn btn-small">Más Info</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div><img src="Img/LUXE LASHES 3.png" class="course-number"></div>
+                    <h3>Curso Completo Profesional</h3>
+                    <p class="course-duration">Duración: 1 semana</p>
+                    <p class="course-description">Certificación completa en todas las técnicas</p>
+                    <div class="course-footer">
+                        <span class="course-price">Consultar</span>
+                        <button class="btn btn-small">Más Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="courses-benefits">
+                <h3>¿Por qué elegir nuestros cursos?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-value">100%</div>
+                        <img src="Img/LUXE LASHES MUÑECA.png">
+                        <p>Certificación Profesional</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-value">Práctica</div>
+                        <img src="Img/LUXE LASHES MUÑECA 2.png">
+                        <p>Modelos Reales</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-value">Kit</div>
+                        <img src="Img/LUXE LASHES MUÑECA 3.png">
+                        <p>Incluido Completo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contáctanos</h2>
+                <p>Estamos aquí para ti</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+57 123 456 7890</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@luxelashes.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Calle 123 #45-67, Bogotá, Colombia</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Teléfono" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje" rows="4" class="form-input"></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-full" onclick="handleSubmit()">Enviar Mensaje</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">Luxe Lashes</h3>
+                    <p>Realzando tu belleza natural desde 2020</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Extensiones Clásicas</a></li>
+                        <li><a href="#">Volumen Ruso</a></li>
+                        <li><a href="#">Lifting</a></li>
+                        <li><a href="#">Diseño de Cejas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="#">Curso Básico</a></li>
+                        <li><a href="#">Volumen Ruso</a></li>
+                        <li><a href="#">Lifting & Laminado</a></li>
+                        <li><a href="#">Certificación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Horario</h4>
+                    <ul>
+                        <li>Lunes - Viernes: 9am - 7pm</li>
+                        <li>Sábados: 10am - 6pm</li>
+                        <li>Domingos: Cerrado</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxe Lashes. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    
+    // Animate hamburger to X
+    const hamburger = menuToggle.querySelector('.hamburger');
+    hamburger.style.transform = navMenu.classList.contains('active') 
+        ? 'rotate(45deg)' 
+        : 'rotate(0)';
+});
+
+// Close mobile menu when clicking on a link
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            navMenu.classList.remove('active');
+            const hamburger = menuToggle.querySelector('.hamburger');
+            hamburger.style.transform = 'rotate(0)';
+        }
+    });
+});
+
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const offsetTop = target.offsetTop - 70; // Account for fixed navbar
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Service Cards Hover Effect (for mobile touch)
+const serviceCards = document.querySelectorAll('.service-card');
+serviceCards.forEach(card => {
+    card.addEventListener('click', function() {
+        // Toggle active class for mobile
+        if (window.innerWidth <= 768) {
+            this.classList.toggle('active');
+        }
+    });
+});
+
+// Add active class styling for mobile
+const style = document.createElement('style');
+style.textContent = `
+    @media (max-width: 768px) {
+        .service-card.active .service-description,
+        .service-card.active .service-content .btn {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .service-card.active .service-overlay {
+            opacity: 0.9;
+        }
+    }
+`;
+document.head.appendChild(style);
+
+// Navbar Background Change on Scroll
+let lastScroll = 0;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    // Add shadow when scrolled
+    if (currentScroll > 50) {
+        navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)';
+    } else {
+        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+    }
+    
+    lastScroll = currentScroll;
+});
+
+// Scroll Animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe elements for animation
+document.querySelectorAll('.service-card, .course-card, .contact-item, .courses-benefits').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+});
+
+// Form Submission Handler
+function handleSubmit() {
+    const inputs = document.querySelectorAll('.contact-form .form-input');
+    let isValid = true;
+    
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            isValid = false;
+            input.style.borderColor = '#ff4444';
+        } else {
+            input.style.borderColor = 'var(--taupe)';
+        }
+    });
+    
+    if (isValid) {
+        alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+        inputs.forEach(input => {
+            input.value = '';
+        });
+    } else {
+        alert('Por favor completa todos los campos.');
+    }
+}
+
+// Course and Service Button Handlers
+document.querySelectorAll('.service-card .btn, .course-card .btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const cardTitle = e.target.closest('.service-card, .course-card').querySelector('h3').textContent;
+        alert(`¡Genial! Te contactaremos pronto sobre: ${cardTitle}`);
+    });
+});
+
+// Add parallax effect to hero section
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const heroImage = document.querySelector('.hero-image');
+    if (heroImage) {
+        heroImage.style.transform = `translateY(${scrolled * 0.3}px)`;
+    }
+});
+
+// Active nav link on scroll
+window.addEventListener('scroll', () => {
+    let current = '';
+    const sections = document.querySelectorAll('section');
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.clientHeight;
+        
+        if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+        }
+    });
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+});
+
+// Add active state styling
+const activeStyle = document.createElement('style');
+activeStyle.textContent = `
+    .nav-link.active {
+        color: var(--beige);
+        font-weight: 600;
+    }
+`;
+document.head.appendChild(activeStyle);
+
+// Counter animation for benefits
+function animateCounter(element, target, duration = 2000) {
+    let start = 0;
+    const increment = target / (duration / 16);
+    
+    const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(start);
+        }
+    }, 16);
+}
+
+// Observe benefits section for counter animation
+const benefitsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const benefitItems = entry.target.querySelectorAll('.benefit-item');
+            benefitItems.forEach((item, index) => {
+                const valueElement = item.querySelector('.benefit-value');
+                const text = valueElement.textContent;
+                
+                // Animate if it's a number
+                if (!isNaN(parseInt(text))) {
+                    setTimeout(() => {
+                        animateCounter(valueElement, parseInt(text), 1500);
+                    }, index * 200);
+                }
+            });
+            benefitsObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+const benefitsSection = document.querySelector('.courses-benefits');
+if (benefitsSection) {
+    benefitsObserver.observe(benefitsSection);
+}
+
+// Load animation on page load
+window.addEventListener('load', () => {
+    document.body.style.opacity = '0';
+    document.body.style.transition = 'opacity 0.5s ease';
+    setTimeout(() => {
+        document.body.style.opacity = '1';
+    }, 100);
+});
+
+console.log('Luxe Lashes website loaded successfully! ✨');
+    </script>
+</body>
+</html>
