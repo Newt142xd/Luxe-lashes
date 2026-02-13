@@ -10,7 +10,7 @@
     <link rel="icon" href="img/LUXE LASHES 3.png" />
 </head>
 <style>
-    /* Reset y Variables - TEMA OSCURO ELEGANTE */
+    /* Reset y Variables - TEMA FEMENINO ELEGANTE */
 * {
     margin: 0;
     padding: 0;
@@ -18,24 +18,26 @@
 }
 
 :root {
-    /* Colores de la paleta adaptados para tema oscuro */
-    --cream: #FFFEEB;
-    --beige: #DEC897;
-    --black: #000000;
-    --taupe: #C3B19D;
-    --pink: #EFE7DC;
-    --gray: #EDF2F5;
+    /* Paleta femenina y elegante */
+    --rose-gold: #E8B4B8;
+    --soft-pink: #F8E8E8;
+    --blush: #F5D4D4;
+    --dusty-rose: #D4A5A5;
+    --champagne: #F7E7CE;
+    --mauve: #C9ADA7;
+    --cream: #FFF8F0;
+    --lilac: #E6D7E8;
+    --peach: #FFD7C4;
     
-    /* Colores oscuros armónicos */
+    /* Mantener el menú oscuro */
     --dark-bg: #1a1614;
     --dark-secondary: #2a2420;
-    --dark-tertiary: #3a3430;
 }
 
 body {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background-color: var(--dark-bg);
-    color: var(--cream);
+    background: linear-gradient(135deg, var(--soft-pink) 0%, var(--cream) 50%, var(--champagne) 100%);
+    color: #4a3f3f;
     line-height: 1.6;
     font-weight: 400;
 }
@@ -54,7 +56,7 @@ h2,
     padding: 0 20px;
 }
 
-/* Navigation */
+/* Navigation - MANTENER IGUAL */
 .navbar {
     position: fixed;
     top: 0;
@@ -77,10 +79,10 @@ h2,
 }
 
 .logo img {
-        max-width: 11rem;
-        height: auto;
-        display: block;
-      }
+    max-width: 11rem;
+    height: auto;
+    display: block;
+}
 
 .nav-menu {
     display: flex;
@@ -104,12 +106,12 @@ h2,
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--beige);
+    background-color: var(--rose-gold);
     transition: width 0.3s;
 }
 
 .nav-link:hover {
-    color: var(--beige);
+    color: var(--rose-gold);
 }
 
 .nav-link:hover::after {
@@ -127,7 +129,7 @@ h2,
     display: block;
     width: 25px;
     height: 3px;
-    background-color: var(--beige);
+    background-color: var(--rose-gold);
     position: relative;
 }
 
@@ -137,7 +139,7 @@ h2,
     position: absolute;
     width: 25px;
     height: 3px;
-    background-color: var(--beige);
+    background-color: var(--rose-gold);
     transition: 0.3s;
 }
 
@@ -157,14 +159,14 @@ h2,
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-secondary) 50%, var(--dark-tertiary) 100%);
+    background: linear-gradient(135deg, var(--soft-pink) 0%, var(--blush) 30%, var(--champagne) 70%, var(--lilac) 100%);
 }
 
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(222, 200, 151, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 70% 50%, rgba(195, 177, 157, 0.06) 0%, transparent 50%);
+    background: radial-gradient(circle at 30% 50%, rgba(232, 180, 184, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(230, 215, 232, 0.2) 0%, transparent 50%);
 }
 
 .hero-content {
@@ -179,16 +181,19 @@ h2,
 
 .hero-text h1 {
     font-size: 62px;
-    color: var(--beige);
+    background: linear-gradient(135deg, #D4A5A5 0%, #ad898c 50%, #413a38 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 24px;
     line-height: 1.1;
     letter-spacing: 1px;
-    text-shadow: 0 4px 20px rgba(222, 200, 151, 0.2);
+    text-shadow: 0 4px 20px rgba(232, 180, 184, 0.3);
 }
 
 .hero-text p {
     font-size: 18px;
-    color: var(--taupe);
+    color: #6b5858;
     margin-bottom: 32px;
     line-height: 1.8;
     font-weight: 400;
@@ -215,25 +220,25 @@ h2,
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--beige) 0%, var(--taupe) 100%);
-    color: var(--dark-bg);
-    box-shadow: 0 4px 15px rgba(222, 200, 151, 0.3);
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(232, 180, 184, 0.4);
 }
 
 .btn-primary:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 25px rgba(222, 200, 151, 0.4);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--beige);
-    border: 2px solid var(--beige);
+    color: var(--dusty-rose);
+    border: 2px solid var(--dusty-rose);
 }
 
 .btn-secondary:hover {
-    background-color: var(--beige);
-    color: var(--dark-bg);
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    color: white;
     transform: scale(1.05);
 }
 
@@ -251,14 +256,14 @@ h2,
 }
 
 .image-wrapper {
-    width: 100%;
+    width: 80%;
     height: 500px;
-    background-color: var(--dark-secondary);
+    background: linear-gradient(135deg, var(--blush) 0%, var(--champagne) 100%);
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
-                0 0 40px rgba(222, 200, 151, 0.1);
-    border: 1px solid rgba(222, 200, 151, 0.1);
+    box-shadow: 0 20px 60px rgba(232, 180, 184, 0.3),
+                0 0 40px rgba(230, 215, 232, 0.2);
+    border: 2px solid rgba(232, 180, 184, 0.3);
 }
 
 .image-wrapper img {
@@ -277,7 +282,7 @@ h2,
 .circle-1 {
     width: 200px;
     height: 200px;
-    background-color: var(--beige);
+    background-color: var(--rose-gold);
     bottom: -50px;
     right: -50px;
 }
@@ -285,7 +290,7 @@ h2,
 .circle-2 {
     width: 150px;
     height: 150px;
-    background-color: var(--taupe);
+    background-color: var(--lilac);
     top: -40px;
     left: -40px;
 }
@@ -293,7 +298,7 @@ h2,
 /* Services Section */
 .services {
     padding: 100px 0;
-    background: var(--dark-secondary);
+    background: linear-gradient(to bottom, var(--cream) 0%, var(--soft-pink) 100%);
     position: relative;
 }
 
@@ -304,7 +309,7 @@ h2,
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--beige), transparent);
+    background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
 }
 
 .section-header {
@@ -314,15 +319,18 @@ h2,
 
 .section-header h2 {
     font-size: 52px;
-    color: var(--beige);
+    background: linear-gradient(135deg, var(--dusty-rose) 0%, var(--rose-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 16px;
     letter-spacing: 1px;
-    text-shadow: 0 4px 20px rgba(222, 200, 151, 0.2);
+    text-shadow: 0 4px 20px rgba(232, 180, 184, 0.3);
 }
 
 .section-header p {
     font-size: 18px;
-    color: var(--taupe);
+    color: #6b5858;
     font-weight: 400;
 }
 
@@ -335,18 +343,18 @@ h2,
 .service-card {
     border-radius: 20px;
     overflow: hidden;
-    background: var(--dark-tertiary);
-    border: 1px solid rgba(222, 200, 151, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: white;
+    border: 2px solid rgba(232, 180, 184, 0.3);
+    box-shadow: 0 10px 30px rgba(232, 180, 184, 0.2);
     transition: all 0.3s;
     cursor: pointer;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
-                0 0 30px rgba(222, 200, 151, 0.1);
-    border-color: rgba(222, 200, 151, 0.3);
+    box-shadow: 0 20px 40px rgba(232, 180, 184, 0.4),
+                0 0 30px rgba(230, 215, 232, 0.3);
+    border-color: var(--rose-gold);
 }
 
 .service-image {
@@ -363,7 +371,7 @@ h2,
 .service-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(26, 22, 20, 0.95), transparent 50%, rgba(26, 22, 20, 0.3));
+    background: linear-gradient(to top, rgba(232, 180, 184, 0.95), transparent 50%, rgba(245, 212, 212, 0.4));
     opacity: 0.8;
     transition: opacity 0.3s;
 }
@@ -386,7 +394,7 @@ h2,
     margin-bottom: 12px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: var(--beige);
+    color: white;
 }
 
 .service-description {
@@ -397,7 +405,7 @@ h2,
     margin-bottom: 16px;
     line-height: 1.6;
     font-weight: 400;
-    color: var(--cream);
+    color: rgba(26, 22, 20, 0.95);
 }
 
 .service-card:hover .service-description {
@@ -409,8 +417,8 @@ h2,
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.3s;
-    background: linear-gradient(135deg, var(--beige) 0%, var(--taupe) 100%);
-    color: var(--dark-bg);
+    background: rgb(241, 234, 234);
+    color: var(--dusty-rose);
 }
 
 .service-card:hover .service-content .btn {
@@ -418,10 +426,119 @@ h2,
     transform: translateY(0);
 }
 
+.service-content .btn:hover {
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    color: white;
+}
+
+/* Gallery Section - NUEVA SECCIÓN */
+.gallery {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--soft-pink) 0%, var(--blush) 50%, var(--champagne) 100%);
+    position: relative;
+}
+
+.gallery::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+.video-card {
+    background: white;
+    border: 2px solid rgba(232, 180, 184, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(232, 180, 184, 0.2);
+    transition: all 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(232, 180, 184, 0.4),
+                0 0 30px rgba(230, 215, 232, 0.3);
+    border-color: var(--rose-gold);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background: linear-gradient(135deg, var(--blush) 0%, var(--champagne) 100%);
+    overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-info {
+    padding: 24px;
+}
+
+.video-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--dusty-rose);
+}
+
+.video-info p {
+    font-size: 14px;
+    color: #6b5858;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Placeholder para videos */
+.video-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--blush) 0%, var(--champagne) 100%);
+    color: var(--dusty-rose);
+}
+
+.video-placeholder svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+    stroke: var(--rose-gold);
+}
+
+.video-placeholder p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dusty-rose);
+}
+
 /* Courses Section */
 .courses {
     padding: 100px 0;
-    background: var(--dark-bg);
+    background: linear-gradient(135deg, var(--champagne) 0%, var(--soft-pink) 50%, var(--lilac) 100%);
     position: relative;
 }
 
@@ -432,7 +549,7 @@ h2,
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--beige), transparent);
+    background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
 }
 
 .courses-grid {
@@ -443,19 +560,19 @@ h2,
 }
 
 .course-card {
-    background: var(--dark-secondary);
-    border: 1px solid rgba(222, 200, 151, 0.1);
+    background: white;
+    border: 2px solid rgba(232, 180, 184, 0.3);
     border-radius: 20px;
     padding: 32px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(232, 180, 184, 0.2);
     transition: all 0.3s;
 }
 
 .course-card:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
-                0 0 30px rgba(222, 200, 151, 0.1);
+    box-shadow: 0 20px 40px rgba(232, 180, 184, 0.4),
+                0 0 30px rgba(230, 215, 232, 0.3);
     transform: translateY(-5px);
-    border-color: rgba(222, 200, 151, 0.3);
+    border-color: var(--rose-gold);
 }
 
 .course-number {
@@ -467,9 +584,8 @@ h2,
     justify-content: center;
     margin-bottom: 20px;
     overflow: hidden;
-  
     padding: 8px;
-    box-shadow: 0 4px 15px rgba(222, 200, 151, 0.3);
+    box-shadow: 0 4px 15px rgba(232, 180, 184, 0.3);
 }
 
 .course-number img {
@@ -483,17 +599,17 @@ h2,
     margin-bottom: 12px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: var(--beige);
+    color: var(--dusty-rose);
 }
 
 .course-duration {
-    color: var(--taupe);
+    color: var(--mauve);
     margin-bottom: 12px;
     font-weight: 500;
 }
 
 .course-description {
-    color: rgba(255, 254, 235, 0.7);
+    color: #6b5858;
     margin-bottom: 20px;
     line-height: 1.6;
     font-weight: 400;
@@ -508,25 +624,27 @@ h2,
 .course-price {
     font-size: 18px;
     font-weight: 700;
-    color: var(--beige);
+    color: var(--dusty-rose);
 }
 
 .courses-benefits {
-    background: linear-gradient(135deg, var(--dark-secondary) 0%, var(--dark-tertiary) 100%);
-    border: 1px solid rgba(222, 200, 151, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 232, 232, 0.9) 100%);
+    border: 2px solid var(--rose-gold);
     border-radius: 20px;
     padding: 48px;
     text-align: center;
-    color: white;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 40px rgba(232, 180, 184, 0.3);
 }
 
 .courses-benefits h3 {
     font-size: 32px;
     margin-bottom: 32px;
     font-family: 'Pacifico', cursive;
-    color: var(--beige);
-    text-shadow: 0 4px 20px rgba(222, 200, 151, 0.2);
+    background: linear-gradient(135deg, var(--dusty-rose) 0%, var(--rose-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 4px 20px rgba(232, 180, 184, 0.3);
 }
 
 .benefits-grid {
@@ -539,7 +657,10 @@ h2,
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 8px;
-    color: var(--beige);
+    background: linear-gradient(135deg, var(--dusty-rose) 0%, var(--rose-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .benefit-item img {
@@ -553,13 +674,13 @@ h2,
 .benefit-item p {
     font-weight: 400;
     font-size: 16px;
-    color: var(--cream);
+    color: #6b5858;
 }
 
 /* Contact Section */
 .contact {
     padding: 100px 0;
-    background: var(--dark-secondary);
+    background: linear-gradient(to bottom, var(--soft-pink) 0%, var(--blush) 100%);
     position: relative;
 }
 
@@ -570,7 +691,7 @@ h2,
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--beige), transparent);
+    background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
 }
 
 .contact-grid {
@@ -593,17 +714,17 @@ h2,
 .contact-icon {
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, var(--beige) 0%, var(--taupe) 100%);
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(222, 200, 151, 0.3);
+    box-shadow: 0 4px 15px rgba(232, 180, 184, 0.4);
 }
 
 .contact-icon svg {
-    stroke: var(--dark-bg);
+    stroke: white;
 }
 
 .contact-item h3 {
@@ -611,11 +732,11 @@ h2,
     margin-bottom: 4px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: var(--beige);
+    color: var(--dusty-rose);
 }
 
 .contact-item p {
-    color: var(--taupe);
+    color: #6b5858;
     font-weight: 400;
 }
 
@@ -623,7 +744,7 @@ h2,
     margin-bottom: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: var(--beige);
+    color: var(--dusty-rose);
 }
 
 .social-icons {
@@ -634,31 +755,31 @@ h2,
 .social-icon {
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, var(--beige) 0%, var(--taupe) 100%);
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--dark-bg);
+    color: white;
     transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(222, 200, 151, 0.3);
+    box-shadow: 0 4px 15px rgba(232, 180, 184, 0.4);
 }
 
 .social-icon:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(222, 200, 151, 0.4);
+    box-shadow: 0 6px 20px rgba(232, 180, 184, 0.6);
 }
 
 .social-icon svg {
-    stroke: var(--dark-bg);
+    stroke: white;
 }
 
 .contact-form {
-    background: var(--dark-tertiary);
-    border: 1px solid rgba(222, 200, 151, 0.1);
+    background: white;
+    border: 2px solid rgba(232, 180, 184, 0.3);
     border-radius: 20px;
     padding: 32px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(232, 180, 184, 0.2);
 }
 
 .form-group {
@@ -668,23 +789,23 @@ h2,
 .form-input {
     width: 100%;
     padding: 14px 18px;
-    border: 1px solid rgba(222, 200, 151, 0.2);
+    border: 2px solid rgba(232, 180, 184, 0.3);
     border-radius: 12px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     transition: all 0.3s;
-    background-color: var(--dark-secondary);
-    color: var(--cream);
+    background-color: var(--cream);
+    color: #4a3f3f;
 }
 
 .form-input:focus {
     outline: none;
-    border-color: var(--beige);
-    box-shadow: 0 0 0 3px rgba(222, 200, 151, 0.1);
+    border-color: var(--rose-gold);
+    box-shadow: 0 0 0 3px rgba(232, 180, 184, 0.2);
 }
 
 .form-input::placeholder {
-    color: var(--taupe);
+    color: var(--mauve);
     font-weight: 400;
 }
 
@@ -694,10 +815,10 @@ textarea.form-input {
 
 /* Footer */
 .footer {
-    background-color: var(--dark-bg);
-    color: var(--cream);
+    background: linear-gradient(135deg, var(--dusty-rose) 0%, var(--mauve) 100%);
+    color: white;
     padding: 60px 0 30px;
-    border-top: 1px solid rgba(222, 200, 151, 0.1);
+    border-top: 2px solid var(--rose-gold);
 }
 
 .footer-grid {
@@ -710,12 +831,12 @@ textarea.form-input {
 .footer-logo {
     font-size: 28px;
     margin-bottom: 16px;
-    color: var(--beige);
-    text-shadow: 0 2px 10px rgba(222, 200, 151, 0.3);
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer-col p {
-    color: var(--taupe);
+    color:  rgba(26, 22, 20, 0.95);
     font-weight: 400;
     line-height: 1.6;
 }
@@ -724,7 +845,7 @@ textarea.form-input {
     margin-bottom: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: var(--beige);
+    color: white;
 }
 
 .footer-col ul {
@@ -733,24 +854,25 @@ textarea.form-input {
 
 .footer-col ul li {
     margin-bottom: 8px;
+    color:  rgba(26, 22, 20, 0.95);
 }
 
 .footer-col ul li a {
-    color: var(--taupe);
+    color: rgba(26, 22, 20, 0.95);
     text-decoration: none;
     transition: color 0.3s;
     font-weight: 400;
 }
 
 .footer-col ul li a:hover {
-    color: var(--beige);
+    color: white;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(222, 200, 151, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 20px;
     text-align: center;
-    color: var(--taupe);
+    color: rgba(26, 22, 20, 0.95);
     font-weight: 400;
 }
 
@@ -805,7 +927,8 @@ textarea.form-input {
     }
 
     .services-grid,
-    .courses-grid {
+    .courses-grid,
+    .gallery-grid {
         grid-template-columns: 1fr;
     }
 
@@ -864,6 +987,7 @@ textarea.form-input {
             <div class="nav-menu" id="navMenu">
                 <a href="#inicio" class="nav-link">Inicio</a>
                 <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#galeria" class="nav-link">Galería</a>
                 <a href="#cursos" class="nav-link">Cursos</a>
                 <a href="#contacto" class="nav-link">Contacto</a>
             </div>
@@ -891,7 +1015,7 @@ textarea.form-input {
                 </div>
                 <div class="hero-image">
                     <div class="image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=800&fit=crop" alt="Luxe Lashes">
+                        <img src="Img/Mapeo de ojos.jpg" alt="Luxe Lashes">
                     </div>
                     <div class="decoration-circle circle-1"></div>
                     <div class="decoration-circle circle-2"></div>
@@ -911,48 +1035,44 @@ textarea.form-input {
             <div class="services-grid">
                 <div class="service-card" data-service="1">
                     <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=400&h=600&fit=crop" alt="Extensiones Clásicas">
+                        <img src="Img/Pestañas 2D y 3D.jpg" alt="Extensiones Clásicas">
                         <div class="service-overlay"></div>
                         <div class="service-content">
-                            <h3>Extensiones de Pestañas Clásicas</h3>
                             <p class="service-description">Realza tu mirada con extensiones pestaña por pestaña para un look natural y elegante</p>
-                            <button class="btn btn-small">Reservar Cita</button>
+                            <button class="btn btn-small">!APRENDER AHORA!</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="service-card" data-service="2">
                     <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&h=600&fit=crop" alt="Volumen Ruso">
+                        <img src="Img/Remocion pestañas.jpg" alt="Volumen Ruso">
                         <div class="service-overlay"></div>
                         <div class="service-content">
-                            <h3>Volumen Ruso</h3>
                             <p class="service-description">Técnica avanzada que crea pestañas más densas y dramáticas con múltiples extensiones</p>
-                            <button class="btn btn-small">Reservar Cita</button>
+                            <button class="btn btn-small">!APRENDER AHORA!</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="service-card" data-service="3">
                     <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=400&h=600&fit=crop" alt="Lifting de Pestañas">
+                        <img src="Img/implementos lash.jpg" alt="Lifting de Pestañas">
                         <div class="service-overlay"></div>
                         <div class="service-content">
-                            <h3>Lifting de Pestañas</h3>
                             <p class="service-description">Curl permanente que levanta y define tus pestañas naturales hasta por 8 semanas</p>
-                            <button class="btn btn-small">Reservar Cita</button>
+                            <button class="btn btn-small">!APRENDER AHORA!</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="service-card" data-service="4">
                     <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&h=600&fit=crop" alt="Diseño de Cejas">
+                        <img src="Img/Manual practica.jpg" alt="Diseño de Cejas">
                         <div class="service-overlay"></div>
                         <div class="service-content">
-                            <h3>Diseño de Cejas</h3>
                             <p class="service-description">Perfilado, tinte y laminado para cejas perfectamente definidas</p>
-                            <button class="btn btn-small">Reservar Cita</button>
+                            <button class="btn btn-small">!APRENDER AHORA!</button>
                         </div>
                     </div>
                 </div>
@@ -960,77 +1080,113 @@ textarea.form-input {
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section id="cursos" class="courses">
+    <!-- Gallery Section - NUEVA SECCIÓN DE VIDEOS -->
+    <section id="galeria" class="gallery">
         <div class="container">
             <div class="section-header">
-                <h2>Cursos Profesionales</h2>
-                <p>Conviértete en experta con nuestra certificación profesional</p>
+                <h2>Nuestra Galería</h2>
+                <p>Descubre nuestro trabajo en acción</p>
             </div>
 
-            <div class="courses-grid">
-                <div class="course-card">
-                    <div><img src="Img/LUXE LASHES 3.png" class="course-number"></div>
-                    <h3>Curso Básico de Extensiones</h3>
-                    <p class="course-duration">Duración: 2 días</p>
-                    <p class="course-description">Aprende la técnica clásica de aplicación pestaña por pestaña</p>
-                    <div class="course-footer">
-                        <span class="course-price">Consultar</span>
-                        <button class="btn btn-small">Más Info</button>
+            <div class="gallery-grid">
+                <!-- Video Card 1 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <!-- Aquí irá el video cuando esté disponible -->
+                        <!-- Ejemplo con iframe de YouTube: -->
+                        <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        
+                        <!-- Placeholder temporal -->
+                        <div class="video-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <p>Video próximamente</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Proceso de Extensiones Clásicas</h3>
+                        <p>Mira cómo transformamos pestañas naturales en una mirada deslumbrante</p>
                     </div>
                 </div>
 
-                <div class="course-card">
-                    <div><img src="Img/LUXE LASHES 3.png" class="course-number"></div>
-                    <h3>Curso Volumen Ruso</h3>
-                    <p class="course-duration">Duración: 3 días</p>
-                    <p class="course-description">Domina la técnica avanzada de volumen 2D-6D</p>
-                    <div class="course-footer">
-                        <span class="course-price">Consultar</span>
-                        <button class="btn btn-small">Más Info</button>
+                <!-- Video Card 2 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <p>Video próximamente</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Técnica de Volumen Ruso</h3>
+                        <p>Descubre la técnica que crea el efecto más dramático y lleno</p>
                     </div>
                 </div>
 
-                <div class="course-card">
-                    <div><img src="Img/LUXE LASHES 3.png"  class="course-number"></div>
-                    <h3>Curso Lifting & Laminado</h3>
-                    <p class="course-duration">Duración: 1 día</p>
-                    <p class="course-description">Especialízate en tratamientos de curl y laminado</p>
-                    <div class="course-footer">
-                        <span class="course-price">Consultar</span>
-                        <button class="btn btn-small">Más Info</button>
+                <!-- Video Card 3 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <p>Video próximamente</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Antes y Después</h3>
+                        <p>Resultados reales de nuestros tratamientos en nuestras clientas</p>
                     </div>
                 </div>
 
-                <div class="course-card">
-                    <div><img src="Img/LUXE LASHES 3.png" class="course-number"></div>
-                    <h3>Curso Completo Profesional</h3>
-                    <p class="course-duration">Duración: 1 semana</p>
-                    <p class="course-description">Certificación completa en todas las técnicas</p>
-                    <div class="course-footer">
-                        <span class="course-price">Consultar</span>
-                        <button class="btn btn-small">Más Info</button>
+                <!-- Video Card 4 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <p>Video próximamente</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Nuestros Cursos en Acción</h3>
+                        <p>Observa a nuestras estudiantes aprendiendo las mejores técnicas</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="courses-benefits">
-                <h3>¿Por qué elegir nuestros cursos?</h3>
-                <div class="benefits-grid">
-                    <div class="benefit-item">
-                        <div class="benefit-value">100%</div>
-                        <img src="Img/LUXE LASHES MUÑECA.png">
-                        <p>Certificación Profesional</p>
+                <!-- Video Card 5 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <p>Video próximamente</p>
+                        </div>
                     </div>
-                    <div class="benefit-item">
-                        <div class="benefit-value">Práctica</div>
-                        <img src="Img/LUXE LASHES MUÑECA 2.png">
-                        <p>Modelos Reales</p>
+                    <div class="video-info">
+                        <h3>Lifting de Pestañas Paso a Paso</h3>
+                        <p>Conoce el proceso completo de este tratamiento tan demandado</p>
                     </div>
-                    <div class="benefit-item">
-                        <div class="benefit-value">Kit</div>
-                        <img src="Img/LUXE LASHES MUÑECA 3.png">
-                        <p>Incluido Completo</p>
+                </div>
+
+                <!-- Video Card 6 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <p>Video próximamente</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Testimonios de Clientas</h3>
+                        <p>Escucha las experiencias de quienes confían en Luxe Lashes</p>
                     </div>
                 </div>
             </div>
@@ -1266,7 +1422,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-document.querySelectorAll('.service-card, .course-card, .contact-item, .courses-benefits').forEach(el => {
+document.querySelectorAll('.service-card, .course-card, .contact-item, .courses-benefits, .video-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -1283,7 +1439,7 @@ function handleSubmit() {
             isValid = false;
             input.style.borderColor = '#ff4444';
         } else {
-            input.style.borderColor = 'var(--taupe)';
+            input.style.borderColor = 'var(--rose-gold)';
         }
     });
     
@@ -1341,7 +1497,7 @@ window.addEventListener('scroll', () => {
 const activeStyle = document.createElement('style');
 activeStyle.textContent = `
     .nav-link.active {
-        color: var(--beige);
+        color: var(--rose-gold);
         font-weight: 600;
     }
 `;
