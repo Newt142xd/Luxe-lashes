@@ -10,7 +10,6 @@
     <link rel="icon" href="img/LUXE LASHES 3.png" />
 </head>
 <style>
-    /* Reset y Variables - TEMA FEMENINO ELEGANTE */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@
 }
 
 :root {
-    /* Paleta femenina y elegante */
     --rose-gold: #E8B4B8;
     --soft-pink: #F8E8E8;
     --blush: #F5D4D4;
@@ -28,8 +26,6 @@
     --cream: #FFF8F0;
     --lilac: #E6D7E8;
     --peach: #FFD7C4;
-    
-    /* Mantener el menú oscuro */
     --dark-bg: #1a1614;
     --dark-secondary: #2a2420;
 }
@@ -42,10 +38,7 @@ body {
     font-weight: 400;
 }
 
-.logo,
-h1,
-h2,
-.footer-logo {
+.logo, h1, h2, .footer-logo {
     font-family: 'Pacifico', cursive;
     font-weight: 400;
 }
@@ -56,7 +49,7 @@ h2,
     padding: 0 20px;
 }
 
-/* Navigation - MANTENER IGUAL */
+/* Navigation */
 .navbar {
     position: fixed;
     top: 0;
@@ -110,13 +103,8 @@ h2,
     transition: width 0.3s;
 }
 
-.nav-link:hover {
-    color: var(--rose-gold);
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
+.nav-link:hover { color: var(--rose-gold); }
+.nav-link:hover::after { width: 100%; }
 
 .menu-toggle {
     display: none;
@@ -133,8 +121,7 @@ h2,
     position: relative;
 }
 
-.hamburger::before,
-.hamburger::after {
+.hamburger::before, .hamburger::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -143,13 +130,8 @@ h2,
     transition: 0.3s;
 }
 
-.hamburger::before {
-    top: -8px;
-}
-
-.hamburger::after {
-    top: 8px;
-}
+.hamburger::before { top: -8px; }
+.hamburger::after { top: 8px; }
 
 /* Hero Section */
 .hero {
@@ -188,7 +170,6 @@ h2,
     margin-bottom: 24px;
     line-height: 1.1;
     letter-spacing: 1px;
-    text-shadow: 0 4px 20px rgba(232, 180, 184, 0.3);
 }
 
 .hero-text p {
@@ -261,8 +242,7 @@ h2,
     background: linear-gradient(135deg, var(--blush) 0%, var(--champagne) 100%);
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(232, 180, 184, 0.3),
-                0 0 40px rgba(230, 215, 232, 0.2);
+    box-shadow: 0 20px 60px rgba(232, 180, 184, 0.3), 0 0 40px rgba(230, 215, 232, 0.2);
     border: 2px solid rgba(232, 180, 184, 0.3);
 }
 
@@ -279,21 +259,8 @@ h2,
     filter: blur(40px);
 }
 
-.circle-1 {
-    width: 200px;
-    height: 200px;
-    background-color: var(--rose-gold);
-    bottom: -50px;
-    right: -50px;
-}
-
-.circle-2 {
-    width: 150px;
-    height: 150px;
-    background-color: var(--lilac);
-    top: -40px;
-    left: -40px;
-}
+.circle-1 { width: 200px; height: 200px; background-color: var(--rose-gold); bottom: -50px; right: -50px; }
+.circle-2 { width: 150px; height: 150px; background-color: var(--lilac); top: -40px; left: -40px; }
 
 /* Services Section */
 .services {
@@ -305,9 +272,7 @@ h2,
 .services::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0; left: 0; right: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
 }
@@ -325,7 +290,6 @@ h2,
     background-clip: text;
     margin-bottom: 16px;
     letter-spacing: 1px;
-    text-shadow: 0 4px 20px rgba(232, 180, 184, 0.3);
 }
 
 .section-header p {
@@ -352,8 +316,7 @@ h2,
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(232, 180, 184, 0.4),
-                0 0 30px rgba(230, 215, 232, 0.3);
+    box-shadow: 0 20px 40px rgba(232, 180, 184, 0.4), 0 0 30px rgba(230, 215, 232, 0.3);
     border-color: var(--rose-gold);
 }
 
@@ -376,15 +339,11 @@ h2,
     transition: opacity 0.3s;
 }
 
-.service-card:hover .service-overlay {
-    opacity: 0.95;
-}
+.service-card:hover .service-overlay { opacity: 0.95; }
 
 .service-content {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 0; left: 0; right: 0;
     padding: 24px;
     color: white;
 }
@@ -408,10 +367,7 @@ h2,
     color: rgba(26, 22, 20, 0.95);
 }
 
-.service-card:hover .service-description {
-    opacity: 1;
-    transform: translateY(0);
-}
+.service-card:hover .service-description { opacity: 1; transform: translateY(0); }
 
 .service-content .btn {
     opacity: 0;
@@ -421,17 +377,13 @@ h2,
     color: var(--dusty-rose);
 }
 
-.service-card:hover .service-content .btn {
-    opacity: 1;
-    transform: translateY(0);
-}
-
+.service-card:hover .service-content .btn { opacity: 1; transform: translateY(0); }
 .service-content .btn:hover {
     background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
     color: white;
 }
 
-/* Gallery Section - NUEVA SECCIÓN */
+/* ===== GALLERY SECTION - NUEVO DISEÑO ===== */
 .gallery {
     padding: 100px 0;
     background: linear-gradient(135deg, var(--soft-pink) 0%, var(--blush) 50%, var(--champagne) 100%);
@@ -441,98 +393,421 @@ h2,
 .gallery::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0; left: 0; right: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
 }
 
-.gallery-grid {
+/* Layout principal: texto izquierda, video derecha */
+.gallery-showcase {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 32px;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+    align-items: center;
 }
 
-.video-card {
-    background: white;
-    border: 2px solid rgba(232, 180, 184, 0.3);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(232, 180, 184, 0.2);
-    transition: all 0.3s;
+/* Columna de texto */
+.gallery-text {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 }
 
-.video-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(232, 180, 184, 0.4),
-                0 0 30px rgba(230, 215, 232, 0.3);
-    border-color: var(--rose-gold);
-}
-
-.video-wrapper {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    background: linear-gradient(135deg, var(--blush) 0%, var(--champagne) 100%);
-    overflow: hidden;
-}
-
-.video-wrapper iframe,
-.video-wrapper video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-info {
-    padding: 24px;
-}
-
-.video-info h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-    font-family: 'Montserrat', sans-serif;
+.gallery-text .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, rgba(232, 180, 184, 0.2), rgba(230, 215, 232, 0.2));
+    border: 1px solid rgba(232, 180, 184, 0.5);
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--dusty-rose);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: fit-content;
 }
 
-.video-info p {
-    font-size: 14px;
+.gallery-text .section-label::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--rose-gold), var(--dusty-rose));
+    flex-shrink: 0;
+}
+
+.gallery-text h2 {
+    font-size: 44px;
+    background: linear-gradient(135deg, var(--dusty-rose) 0%, #a07878 60%, #6b5858 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.gallery-text .gallery-description {
+    font-size: 16px;
     color: #6b5858;
-    line-height: 1.6;
+    line-height: 1.9;
     font-weight: 400;
 }
 
-/* Placeholder para videos */
-.video-placeholder {
-    position: absolute;
-    top: 0;
-    left: 0;
+.gallery-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.gallery-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.feature-dot {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 3px 12px rgba(232, 180, 184, 0.4);
+}
+
+.feature-dot svg {
+    stroke: white;
+}
+
+.gallery-feature-item span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5a4848;
+}
+
+.gallery-cta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+/* Columna del video */
+.gallery-video-col {
+    position: relative;
+}
+
+.video-container {
+    background: white;
+    border: 2px solid rgba(232, 180, 184, 0.4);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(232, 180, 184, 0.3), 0 0 40px rgba(230, 215, 232, 0.15);
+    transition: box-shadow 0.3s;
+}
+
+.video-container:hover {
+    box-shadow: 0 25px 70px rgba(232, 180, 184, 0.45), 0 0 50px rgba(230, 215, 232, 0.25);
+}
+
+/* El elemento de video */
+.video-player-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #2a1f1f 0%, #1a1414 100%);
+    overflow: hidden;
+}
+
+.main-video {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay de play inicial */
+.video-placeholder-overlay {
+    position: absolute;
+    inset: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--blush) 0%, var(--champagne) 100%);
+    background: rgba(30, 20, 20, 0.45);
+    cursor: pointer;
+    transition: opacity 0.3s;
+    z-index: 2;
+}
+
+.video-placeholder-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.placeholder-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 30px rgba(232, 180, 184, 0.5);
+}
+
+.placeholder-icon svg {
+    stroke: white;
+    margin-left: 4px;
+}
+
+.placeholder-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 0.5px;
+}
+
+/* ===== CONTROLES PERSONALIZADOS ===== */
+.custom-controls {
+    padding: 18px 24px 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Barra de progreso */
+.progress-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.time-display {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--mauve);
+    white-space: nowrap;
+    min-width: 85px;
+    font-variant-numeric: tabular-nums;
+}
+
+.progress-bar-container {
+    flex: 1;
+    height: 5px;
+    background: rgba(232, 180, 184, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+}
+
+.progress-bar-container:hover .progress-fill::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    border-radius: 10px;
+    position: relative;
+    transition: width 0.1s linear;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 14px;
+    height: 14px;
+    background: var(--dusty-rose);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(212, 165, 165, 0.6);
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0;
+}
+
+/* Botones de control */
+.controls-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.controls-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ctrl-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    background: transparent;
+}
+
+.ctrl-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Botón principal play/pause — más grande */
+.ctrl-btn.play-pause {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    box-shadow: 0 4px 16px rgba(232, 180, 184, 0.5);
+}
+
+.ctrl-btn.play-pause svg {
+    stroke: white;
+}
+
+.ctrl-btn.play-pause:hover {
+    box-shadow: 0 6px 22px rgba(212, 165, 165, 0.7);
+}
+
+/* Botones retroceder/avanzar */
+.ctrl-btn.skip {
+    background: linear-gradient(135deg, rgba(232, 180, 184, 0.15), rgba(212, 165, 165, 0.15));
+    border: 1.5px solid rgba(232, 180, 184, 0.4);
     color: var(--dusty-rose);
 }
 
-.video-placeholder svg {
+.ctrl-btn.skip svg {
+    stroke: var(--dusty-rose);
+}
+
+.ctrl-btn.skip:hover {
+    background: linear-gradient(135deg, rgba(232, 180, 184, 0.35), rgba(212, 165, 165, 0.35));
+    border-color: var(--rose-gold);
+}
+
+/* Botón volumen */
+.ctrl-btn.volume-btn {
+    background: transparent;
+    border: 1.5px solid rgba(232, 180, 184, 0.3);
+}
+
+.ctrl-btn.volume-btn svg {
+    stroke: var(--dusty-rose);
+}
+
+.ctrl-btn.volume-btn:hover {
+    background: rgba(232, 180, 184, 0.12);
+    border-color: var(--rose-gold);
+}
+
+/* Slider de volumen */
+.volume-slider-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+    max-width: 0;
+    transition: max-width 0.3s ease, opacity 0.3s;
+    opacity: 0;
+}
+
+.controls-right:hover .volume-slider-wrapper {
+    max-width: 100px;
+    opacity: 1;
+}
+
+.volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--rose-gold) var(--vol, 100%), rgba(232, 180, 184, 0.25) var(--vol, 100%));
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--dusty-rose);
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(212, 165, 165, 0.5);
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--dusty-rose);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 6px rgba(212, 165, 165, 0.5);
+}
+
+/* Botón pantalla completa */
+.ctrl-btn.fullscreen {
+    background: transparent;
+    border: 1.5px solid rgba(232, 180, 184, 0.3);
+}
+
+.ctrl-btn.fullscreen svg {
+    stroke: var(--dusty-rose);
+}
+
+.ctrl-btn.fullscreen:hover {
+    background: rgba(232, 180, 184, 0.12);
+    border-color: var(--rose-gold);
+}
+
+/* Decoración alrededor del video */
+.video-deco-top {
+    position: absolute;
+    top: -20px;
+    right: -20px;
     width: 80px;
     height: 80px;
-    margin-bottom: 16px;
-    stroke: var(--rose-gold);
+    background: radial-gradient(circle, rgba(230, 215, 232, 0.6) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(15px);
+    pointer-events: none;
 }
 
-.video-placeholder p {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--dusty-rose);
+.video-deco-bottom {
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(232, 180, 184, 0.4) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(20px);
+    pointer-events: none;
 }
 
 /* Courses Section */
@@ -545,9 +820,7 @@ h2,
 .courses::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0; left: 0; right: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
 }
@@ -569,8 +842,7 @@ h2,
 }
 
 .course-card:hover {
-    box-shadow: 0 20px 40px rgba(232, 180, 184, 0.4),
-                0 0 30px rgba(230, 215, 232, 0.3);
+    box-shadow: 0 20px 40px rgba(232, 180, 184, 0.4), 0 0 30px rgba(230, 215, 232, 0.3);
     transform: translateY(-5px);
     border-color: var(--rose-gold);
 }
@@ -588,11 +860,7 @@ h2,
     box-shadow: 0 4px 15px rgba(232, 180, 184, 0.3);
 }
 
-.course-number img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-}
+.course-number img { width: 200px; height: 200px; object-fit: contain; }
 
 .course-card h3 {
     font-size: 20px;
@@ -602,18 +870,8 @@ h2,
     color: var(--dusty-rose);
 }
 
-.course-duration {
-    color: var(--mauve);
-    margin-bottom: 12px;
-    font-weight: 500;
-}
-
-.course-description {
-    color: #6b5858;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    font-weight: 400;
-}
+.course-duration { color: var(--mauve); margin-bottom: 12px; font-weight: 500; }
+.course-description { color: #6b5858; margin-bottom: 20px; line-height: 1.6; font-weight: 400; }
 
 .course-footer {
     display: flex;
@@ -644,7 +902,6 @@ h2,
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 4px 20px rgba(232, 180, 184, 0.3);
 }
 
 .benefits-grid {
@@ -671,11 +928,7 @@ h2,
     display: block;
 }
 
-.benefit-item p {
-    font-weight: 400;
-    font-size: 16px;
-    color: #6b5858;
-}
+.benefit-item p { font-weight: 400; font-size: 16px; color: #6b5858; }
 
 /* Contact Section */
 .contact {
@@ -687,9 +940,7 @@ h2,
 .contact::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0; left: 0; right: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
 }
@@ -700,16 +951,9 @@ h2,
     gap: 60px;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
+.contact-info { display: flex; flex-direction: column; gap: 32px; }
 
-.contact-item {
-    display: flex;
-    gap: 16px;
-}
+.contact-item { display: flex; gap: 16px; }
 
 .contact-icon {
     width: 48px;
@@ -723,9 +967,7 @@ h2,
     box-shadow: 0 4px 15px rgba(232, 180, 184, 0.4);
 }
 
-.contact-icon svg {
-    stroke: white;
-}
+.contact-icon svg { stroke: white; }
 
 .contact-item h3 {
     font-size: 18px;
@@ -735,10 +977,7 @@ h2,
     color: var(--dusty-rose);
 }
 
-.contact-item p {
-    color: #6b5858;
-    font-weight: 400;
-}
+.contact-item p { color: #6b5858; font-weight: 400; }
 
 .social-media h3 {
     margin-bottom: 16px;
@@ -747,10 +986,7 @@ h2,
     color: var(--dusty-rose);
 }
 
-.social-icons {
-    display: flex;
-    gap: 16px;
-}
+.social-icons { display: flex; gap: 16px; }
 
 .social-icon {
     width: 48px;
@@ -765,14 +1001,8 @@ h2,
     box-shadow: 0 4px 15px rgba(232, 180, 184, 0.4);
 }
 
-.social-icon:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(232, 180, 184, 0.6);
-}
-
-.social-icon svg {
-    stroke: white;
-}
+.social-icon:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(232, 180, 184, 0.6); }
+.social-icon svg { stroke: white; }
 
 .contact-form {
     background: white;
@@ -782,9 +1012,7 @@ h2,
     box-shadow: 0 10px 30px rgba(232, 180, 184, 0.2);
 }
 
-.form-group {
-    margin-bottom: 16px;
-}
+.form-group { margin-bottom: 16px; }
 
 .form-input {
     width: 100%;
@@ -804,14 +1032,8 @@ h2,
     box-shadow: 0 0 0 3px rgba(232, 180, 184, 0.2);
 }
 
-.form-input::placeholder {
-    color: var(--mauve);
-    font-weight: 400;
-}
-
-textarea.form-input {
-    resize: vertical;
-}
+.form-input::placeholder { color: var(--mauve); font-weight: 400; }
+textarea.form-input { resize: vertical; }
 
 /* Footer */
 .footer {
@@ -828,45 +1050,13 @@ textarea.form-input {
     margin-bottom: 40px;
 }
 
-.footer-logo {
-    font-size: 28px;
-    margin-bottom: 16px;
-    color: white;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.footer-col p {
-    color:  rgba(26, 22, 20, 0.95);
-    font-weight: 400;
-    line-height: 1.6;
-}
-
-.footer-col h4 {
-    margin-bottom: 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: white;
-}
-
-.footer-col ul {
-    list-style: none;
-}
-
-.footer-col ul li {
-    margin-bottom: 8px;
-    color:  rgba(26, 22, 20, 0.95);
-}
-
-.footer-col ul li a {
-    color: rgba(26, 22, 20, 0.95);
-    text-decoration: none;
-    transition: color 0.3s;
-    font-weight: 400;
-}
-
-.footer-col ul li a:hover {
-    color: white;
-}
+.footer-logo { font-size: 28px; margin-bottom: 16px; color: white; }
+.footer-col p { color: rgba(26, 22, 20, 0.95); font-weight: 400; line-height: 1.6; }
+.footer-col h4 { margin-bottom: 16px; font-family: 'Montserrat', sans-serif; font-weight: 600; color: white; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 8px; color: rgba(26, 22, 20, 0.95); }
+.footer-col ul li a { color: rgba(26, 22, 20, 0.95); text-decoration: none; transition: color 0.3s; font-weight: 400; }
+.footer-col ul li a:hover { color: white; }
 
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -876,17 +1066,25 @@ textarea.form-input {
     font-weight: 400;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
+/* Responsive */
+@media (max-width: 900px) {
+    .gallery-showcase {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
+    .gallery-text h2 { font-size: 34px; text-align: center; }
+    .gallery-text .section-label { margin: 0 auto; }
+    .gallery-text .gallery-description { text-align: center; }
+    .gallery-features { align-items: center; }
+    .gallery-cta { justify-content: center; }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
 
     .nav-menu {
         position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
+        top: 70px; left: 0; right: 0;
         background-color: rgba(26, 22, 20, 0.98);
         backdrop-filter: blur(10px);
         flex-direction: column;
@@ -896,94 +1094,37 @@ textarea.form-input {
         border-bottom: 1px solid rgba(222, 200, 151, 0.1);
     }
 
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-link {
-        padding: 12px 0;
-        border-bottom: 1px solid rgba(222, 200, 151, 0.1);
-    }
-
-    .hero-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .hero-text h1 {
-        font-size: 42px;
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .image-wrapper {
-        height: 400px;
-    }
-
-    .section-header h2 {
-        font-size: 38px;
-    }
-
-    .services-grid,
-    .courses-grid,
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .courses-benefits {
-        padding: 32px 20px;
-    }
-
-    .benefits-grid {
-        grid-template-columns: 1fr;
-    }
+    .nav-menu.active { display: flex; }
+    .nav-link { padding: 12px 0; border-bottom: 1px solid rgba(222, 200, 151, 0.1); }
+    .hero-content { grid-template-columns: 1fr; gap: 40px; }
+    .hero-text h1 { font-size: 42px; }
+    .hero-text p { font-size: 16px; }
+    .image-wrapper { height: 400px; }
+    .section-header h2 { font-size: 38px; }
+    .services-grid, .courses-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    .courses-benefits { padding: 32px 20px; }
+    .benefits-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 32px;
-    }
-
-    .section-header h2 {
-        font-size: 32px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .logo {
-        font-size: 26px;
-    }
+    .hero-text h1 { font-size: 32px; }
+    .section-header h2 { font-size: 32px; }
+    .hero-buttons { flex-direction: column; }
+    .btn { width: 100%; text-align: center; }
+    .logo { font-size: 26px; }
 }
 </style>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-             <a href="index.html">
-          <div class="logo">
-            <img src="img/LUXE LASHES 1.png" alt="TROPEX" />
-          </div>
-        </a>
-            
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/LUXE LASHES 1.png" alt="LUXE LASHES" />
+                </div>
+            </a>
             <div class="nav-menu" id="navMenu">
                 <a href="#inicio" class="nav-link">Inicio</a>
                 <a href="#servicios" class="nav-link">Servicios</a>
@@ -991,7 +1132,6 @@ textarea.form-input {
                 <a href="#cursos" class="nav-link">Cursos</a>
                 <a href="#contacto" class="nav-link">Contacto</a>
             </div>
-
             <button class="menu-toggle" id="menuToggle">
                 <span class="hamburger"></span>
             </button>
@@ -1031,7 +1171,6 @@ textarea.form-input {
                 <h2>Nuestros Servicios</h2>
                 <p>Tratamientos profesionales para realzar tu belleza</p>
             </div>
-
             <div class="services-grid">
                 <div class="service-card" data-service="1">
                     <div class="service-image">
@@ -1039,40 +1178,37 @@ textarea.form-input {
                         <div class="service-overlay"></div>
                         <div class="service-content">
                             <p class="service-description">Realza tu mirada con extensiones pestaña por pestaña para un look natural y elegante</p>
-                            <button class="btn btn-small">!APRENDER AHORA!</button>
+                            <button class="btn btn-small">¡APRENDER AHORA!</button>
                         </div>
                     </div>
                 </div>
-
                 <div class="service-card" data-service="2">
                     <div class="service-image">
                         <img src="Img/Remocion pestañas.jpg" alt="Volumen Ruso">
                         <div class="service-overlay"></div>
                         <div class="service-content">
                             <p class="service-description">Técnica avanzada que crea pestañas más densas y dramáticas con múltiples extensiones</p>
-                            <button class="btn btn-small">!APRENDER AHORA!</button>
+                            <button class="btn btn-small">¡APRENDER AHORA!</button>
                         </div>
                     </div>
                 </div>
-
                 <div class="service-card" data-service="3">
                     <div class="service-image">
                         <img src="Img/implementos lash.jpg" alt="Lifting de Pestañas">
                         <div class="service-overlay"></div>
                         <div class="service-content">
                             <p class="service-description">Curl permanente que levanta y define tus pestañas naturales hasta por 8 semanas</p>
-                            <button class="btn btn-small">!APRENDER AHORA!</button>
+                            <button class="btn btn-small">¡APRENDER AHORA!</button>
                         </div>
                     </div>
                 </div>
-
                 <div class="service-card" data-service="4">
                     <div class="service-image">
                         <img src="Img/Manual practica.jpg" alt="Diseño de Cejas">
                         <div class="service-overlay"></div>
                         <div class="service-content">
                             <p class="service-description">Perfilado, tinte y laminado para cejas perfectamente definidas</p>
-                            <button class="btn btn-small">!APRENDER AHORA!</button>
+                            <button class="btn btn-small">¡APRENDER AHORA!</button>
                         </div>
                     </div>
                 </div>
@@ -1080,115 +1216,163 @@ textarea.form-input {
         </div>
     </section>
 
-    <!-- Gallery Section - NUEVA SECCIÓN DE VIDEOS -->
+    <!-- Gallery Section - NUEVO DISEÑO: texto izquierda, video derecha -->
     <section id="galeria" class="gallery">
         <div class="container">
-            <div class="section-header">
-                <h2>Nuestra Galería</h2>
-                <p>Descubre nuestro trabajo en acción</p>
-            </div>
+            <div class="gallery-showcase">
 
-            <div class="gallery-grid">
-                <!-- Video Card 1 -->
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <!-- Aquí irá el video cuando esté disponible -->
-                        <!-- Ejemplo con iframe de YouTube: -->
-                        <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                        
-                        <!-- Placeholder temporal -->
-                        <div class="video-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                            <p>Video próximamente</p>
+                <!-- Columna izquierda: texto -->
+                <div class="gallery-text">
+                    <span class="section-label">Nuestra Galería</span>
+                    <h2>Descubre el Arte de Transformar Miradas</h2>
+                    <p class="gallery-description">
+                        Cada sesión es una experiencia única. Mira de cerca cómo nuestros expertos 
+                        trabajan con precisión y dedicación para crear resultados que superan expectativas. 
+                        Desde extensiones clásicas hasta el dramático volumen ruso, cada técnica 
+                        es aplicada con el mayor cuidado y profesionalismo.
+                    </p>
+
+                    <div class="gallery-features">
+                        <div class="gallery-feature-item">
+                            <div class="feature-dot">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Técnicas certificadas internacionalmente</span>
+                        </div>
+                        <div class="gallery-feature-item">
+                            <div class="feature-dot">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Materiales hipoalergénicos de alta calidad</span>
+                        </div>
+                        <div class="gallery-feature-item">
+                            <div class="feature-dot">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Resultados duraderos hasta 8 semanas</span>
+                        </div>
+                        <div class="gallery-feature-item">
+                            <div class="feature-dot">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Atención personalizada en cada visita</span>
                         </div>
                     </div>
-                    <div class="video-info">
-                        <h3>Proceso de Extensiones Clásicas</h3>
-                        <p>Mira cómo transformamos pestañas naturales en una mirada deslumbrante</p>
+
+                    <div class="gallery-cta">
+                        <a href="#contacto" class="btn btn-primary">Reservar Cita</a>
+                        <a href="#cursos" class="btn btn-secondary">Ver Cursos</a>
                     </div>
                 </div>
 
-                <!-- Video Card 2 -->
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <div class="video-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                            <p>Video próximamente</p>
+                <!-- Columna derecha: video con controles personalizados -->
+                <div class="gallery-video-col">
+                    <div class="video-deco-top"></div>
+                    <div class="video-deco-bottom"></div>
+
+                    <div class="video-container" id="videoContainer">
+                        <div class="video-player-wrapper" id="videoWrapper">
+                            <!-- VIDEO PRINCIPAL — visible y reproducible -->
+                            <video id="mainVideo" class="main-video" preload="metadata">
+                                <source src="Img/Materiales 2.mov" type="video/quicktime">
+                                <source src="Img/Materiales 2.mov" type="video/mp4">
+                            </video>
+
+                            <!-- Overlay de play inicial (se oculta al dar play) -->
+                            <div class="video-placeholder-overlay" id="videoPlaceholder">
+                                <div class="placeholder-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                </div>
+                                <p class="placeholder-text">Presiona play para reproducir</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Técnica de Volumen Ruso</h3>
-                        <p>Descubre la técnica que crea el efecto más dramático y lleno</p>
+
+                        <!-- Controles personalizados -->
+                        <div class="custom-controls" id="customControls">
+                            <!-- Barra de progreso -->
+                            <div class="progress-area">
+                                <span class="time-display" id="timeDisplay">0:00 / 0:00</span>
+                                <div class="progress-bar-container" id="progressBar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
+                            </div>
+
+                            <!-- Botones -->
+                            <div class="controls-row">
+                                <div class="controls-left">
+                                    <!-- Retroceder 10s -->
+                                    <button class="ctrl-btn skip" id="rewindBtn" title="Retroceder 10 segundos">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                            <polyline points="1 4 1 10 7 10"></polyline>
+                                            <path d="M3.51 15a9 9 0 1 0 .49-3.22"></path>
+                                            <text x="9" y="15" font-size="7" fill="currentColor" stroke="none" font-family="Montserrat" font-weight="700">10</text>
+                                        </svg>
+                                    </button>
+
+                                    <!-- Play / Pause -->
+                                    <button class="ctrl-btn play-pause" id="playPauseBtn" title="Reproducir / Pausar">
+                                        <svg id="playIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                        <svg id="pauseIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" style="display:none;">
+                                            <rect x="6" y="4" width="4" height="16"></rect>
+                                            <rect x="14" y="4" width="4" height="16"></rect>
+                                        </svg>
+                                    </button>
+
+                                    <!-- Avanzar 10s -->
+                                    <button class="ctrl-btn skip" id="forwardBtn" title="Avanzar 10 segundos">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                            <polyline points="23 4 23 10 17 10"></polyline>
+                                            <path d="M20.49 15a9 9 0 1 1-.49-3.22"></path>
+                                            <text x="9" y="15" font-size="7" fill="currentColor" stroke="none" font-family="Montserrat" font-weight="700">10</text>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="controls-right">
+                                    <!-- Volumen -->
+                                    <button class="ctrl-btn volume-btn" id="muteBtn" title="Silenciar / Activar sonido">
+                                        <svg id="volumeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                        </svg>
+                                        <svg id="muteIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" style="display:none;">
+                                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                            <line x1="23" y1="9" x2="17" y2="15"></line>
+                                            <line x1="17" y1="9" x2="23" y2="15"></line>
+                                        </svg>
+                                    </button>
+                                    <div class="volume-slider-wrapper">
+                                        <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="100">
+                                    </div>
+
+                                    <!-- Pantalla completa -->
+                                    <button class="ctrl-btn fullscreen" id="fullscreenBtn" title="Pantalla completa">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <polyline points="9 21 3 21 3 15"></polyline>
+                                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Video Card 3 -->
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <div class="video-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                            <p>Video próximamente</p>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Antes y Después</h3>
-                        <p>Resultados reales de nuestros tratamientos en nuestras clientas</p>
-                    </div>
-                </div>
-
-                <!-- Video Card 4 -->
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <div class="video-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                            <p>Video próximamente</p>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Nuestros Cursos en Acción</h3>
-                        <p>Observa a nuestras estudiantes aprendiendo las mejores técnicas</p>
-                    </div>
-                </div>
-
-                <!-- Video Card 5 -->
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <div class="video-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                            <p>Video próximamente</p>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Lifting de Pestañas Paso a Paso</h3>
-                        <p>Conoce el proceso completo de este tratamiento tan demandado</p>
-                    </div>
-                </div>
-
-                <!-- Video Card 6 -->
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <div class="video-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                            <p>Video próximamente</p>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Testimonios de Clientas</h3>
-                        <p>Escucha las experiencias de quienes confían en Luxe Lashes</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -1200,13 +1384,12 @@ textarea.form-input {
                 <h2>Contáctanos</h2>
                 <p>Estamos aquí para ti</p>
             </div>
-
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.19 12 19.79 19.79 0 0 1 1.12 3.33 2 2 0 0 1 3.1 1.12h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                             </svg>
                         </div>
                         <div>
@@ -1214,7 +1397,6 @@ textarea.form-input {
                             <p>+57 123 456 7890</p>
                         </div>
                     </div>
-
                     <div class="contact-item">
                         <div class="contact-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1224,10 +1406,9 @@ textarea.form-input {
                         </div>
                         <div>
                             <h3>Email</h3>
-                            <p>info@luxelashes.com</p>
+                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ef7f0f8f1def2ebe6fbf2ffedf6fbedb0fdf1f3">[email&#160;protected]</a></p>
                         </div>
                     </div>
-
                     <div class="contact-item">
                         <div class="contact-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1240,7 +1421,6 @@ textarea.form-input {
                             <p>Calle 123 #45-67, Bogotá, Colombia</p>
                         </div>
                     </div>
-
                     <div class="social-media">
                         <h3>Síguenos</h3>
                         <div class="social-icons">
@@ -1259,7 +1439,6 @@ textarea.form-input {
                         </div>
                     </div>
                 </div>
-
                 <div class="contact-form">
                     <div class="form-group">
                         <input type="text" placeholder="Nombre" class="form-input">
@@ -1320,241 +1499,1995 @@ textarea.form-input {
         </div>
     </footer>
 
-    <script>
-        // Mobile Menu Toggle
-const menuToggle = document.getElementById('menuToggle');
-const navMenu = document.getElementById('navMenu');
-
-menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    
-    // Animate hamburger to X
-    const hamburger = menuToggle.querySelector('.hamburger');
-    hamburger.style.transform = navMenu.classList.contains('active') 
-        ? 'rotate(45deg)' 
-        : 'rotate(0)';
-});
-
-// Close mobile menu when clicking on a link
-const navLinks = document.querySelectorAll('.nav-link');
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-            navMenu.classList.remove('active');
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // ====== MOBILE MENU ======
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
             const hamburger = menuToggle.querySelector('.hamburger');
-            hamburger.style.transform = 'rotate(0)';
-        }
-    });
-});
-
-// Smooth Scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            const offsetTop = target.offsetTop - 70; // Account for fixed navbar
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-// Service Cards Hover Effect (for mobile touch)
-const serviceCards = document.querySelectorAll('.service-card');
-serviceCards.forEach(card => {
-    card.addEventListener('click', function() {
-        // Toggle active class for mobile
-        if (window.innerWidth <= 768) {
-            this.classList.toggle('active');
-        }
-    });
-});
-
-// Add active class styling for mobile
-const style = document.createElement('style');
-style.textContent = `
-    @media (max-width: 768px) {
-        .service-card.active .service-description,
-        .service-card.active .service-content .btn {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .service-card.active .service-overlay {
-            opacity: 0.9;
-        }
-    }
-`;
-document.head.appendChild(style);
-
-// Navbar Background Change on Scroll
-let lastScroll = 0;
-const navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    // Add shadow when scrolled
-    if (currentScroll > 50) {
-        navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)';
-    } else {
-        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-    }
-    
-    lastScroll = currentScroll;
-});
-
-// Scroll Animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Observe elements for animation
-document.querySelectorAll('.service-card, .course-card, .contact-item, .courses-benefits, .video-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-});
-
-// Form Submission Handler
-function handleSubmit() {
-    const inputs = document.querySelectorAll('.contact-form .form-input');
-    let isValid = true;
-    
-    inputs.forEach(input => {
-        if (!input.value.trim()) {
-            isValid = false;
-            input.style.borderColor = '#ff4444';
-        } else {
-            input.style.borderColor = 'var(--rose-gold)';
-        }
-    });
-    
-    if (isValid) {
-        alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
-        inputs.forEach(input => {
-            input.value = '';
+            hamburger.style.transform = navMenu.classList.contains('active') ? 'rotate(45deg)' : 'rotate(0)';
         });
-    } else {
-        alert('Por favor completa todos los campos.');
-    }
-}
-
-// Course and Service Button Handlers
-document.querySelectorAll('.service-card .btn, .course-card .btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const cardTitle = e.target.closest('.service-card, .course-card').querySelector('h3').textContent;
-        alert(`¡Genial! Te contactaremos pronto sobre: ${cardTitle}`);
-    });
-});
-
-// Add parallax effect to hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const heroImage = document.querySelector('.hero-image');
-    if (heroImage) {
-        heroImage.style.transform = `translateY(${scrolled * 0.3}px)`;
-    }
-});
-
-// Active nav link on scroll
-window.addEventListener('scroll', () => {
-    let current = '';
-    const sections = document.querySelectorAll('section');
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        const sectionHeight = section.clientHeight;
-        
-        if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-        }
-    });
-});
-
-// Add active state styling
-const activeStyle = document.createElement('style');
-activeStyle.textContent = `
-    .nav-link.active {
-        color: var(--rose-gold);
-        font-weight: 600;
-    }
-`;
-document.head.appendChild(activeStyle);
-
-// Counter animation for benefits
-function animateCounter(element, target, duration = 2000) {
-    let start = 0;
-    const increment = target / (duration / 16);
-    
-    const timer = setInterval(() => {
-        start += increment;
-        if (start >= target) {
-            element.textContent = target;
-            clearInterval(timer);
-        } else {
-            element.textContent = Math.floor(start);
-        }
-    }, 16);
-}
-
-// Observe benefits section for counter animation
-const benefitsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const benefitItems = entry.target.querySelectorAll('.benefit-item');
-            benefitItems.forEach((item, index) => {
-                const valueElement = item.querySelector('.benefit-value');
-                const text = valueElement.textContent;
-                
-                // Animate if it's a number
-                if (!isNaN(parseInt(text))) {
-                    setTimeout(() => {
-                        animateCounter(valueElement, parseInt(text), 1500);
-                    }, index * 200);
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    navMenu.classList.remove('active');
+                    menuToggle.querySelector('.hamburger').style.transform = 'rotate(0)';
                 }
             });
-            benefitsObserver.unobserve(entry.target);
+        });
+
+        // ====== SMOOTH SCROLL ======
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
+            });
+        });
+
+        // ====== SERVICE CARDS MOBILE ======
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('click', function() {
+                if (window.innerWidth <= 768) this.classList.toggle('active');
+            });
+        });
+        const style = document.createElement('style');
+        style.textContent = `
+            @media (max-width: 768px) {
+                .service-card.active .service-description,
+                .service-card.active .service-content .btn { opacity: 1; transform: translateY(0); }
+                .service-card.active .service-overlay { opacity: 0.9; }
+            }`;
+        document.head.appendChild(style);
+
+        // ====== NAVBAR SCROLL ======
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').style.boxShadow =
+                window.pageYOffset > 50 ? '0 4px 20px rgba(0,0,0,0.2)' : '0 2px 10px rgba(0,0,0,0.1)';
+        });
+
+        // ====== SCROLL ANIMATIONS ======
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.service-card, .course-card, .contact-item, .courses-benefits, .gallery-text, .video-container').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // ====== FORM ======
+        function handleSubmit() {
+            const inputs = document.querySelectorAll('.contact-form .form-input');
+            let isValid = true;
+            inputs.forEach(input => {
+                if (!input.value.trim()) { isValid = false; input.style.borderColor = '#ff4444'; }
+                else input.style.borderColor = 'var(--rose-gold)';
+            });
+            if (isValid) { alert('¡Gracias por tu mensaje! Te contactaremos pronto.'); inputs.forEach(i => i.value = ''); }
+            else alert('Por favor completa todos los campos.');
         }
-    });
-}, { threshold: 0.5 });
 
-const benefitsSection = document.querySelector('.courses-benefits');
-if (benefitsSection) {
-    benefitsObserver.observe(benefitsSection);
-}
+        // ====== ACTIVE NAV ON SCROLL ======
+        const navLinks = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                if (window.pageYOffset >= section.offsetTop - 100 && window.pageYOffset < section.offsetTop - 100 + section.clientHeight)
+                    current = section.getAttribute('id');
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+            });
+        });
+        const activeStyle = document.createElement('style');
+        activeStyle.textContent = `.nav-link.active { color: var(--rose-gold); font-weight: 600; }`;
+        document.head.appendChild(activeStyle);
 
-// Load animation on page load
-window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    document.body.style.transition = 'opacity 0.5s ease';
-    setTimeout(() => {
-        document.body.style.opacity = '1';
-    }, 100);
-});
+        // ====== PAGE LOAD ======
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => { document.body.style.opacity = '1'; }, 100);
+        });
 
-console.log('Luxe Lashes website loaded successfully! ✨');
+        // ====== VIDEO PLAYER CON CONTROLES PERSONALIZADOS ======
+        (function() {
+            const video = document.getElementById('mainVideo');
+            if (!video) return;
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const playIcon = document.getElementById('playIcon');
+            const pauseIcon = document.getElementById('pauseIcon');
+            const rewindBtn = document.getElementById('rewindBtn');
+            const forwardBtn = document.getElementById('forwardBtn');
+            const progressBar = document.getElementById('progressBar');
+            const progressFill = document.getElementById('progressFill');
+            const timeDisplay = document.getElementById('timeDisplay');
+            const muteBtn = document.getElementById('muteBtn');
+            const volumeIcon = document.getElementById('volumeIcon');
+            const muteIcon = document.getElementById('muteIcon');
+            const volumeSlider = document.getElementById('volumeSlider');
+            const fullscreenBtn = document.getElementById('fullscreenBtn');
+            const videoWrapper = document.getElementById('videoWrapper');
+            const placeholder = document.getElementById('videoPlaceholder');
+
+            function formatTime(secs) {
+                if (isNaN(secs)) return '0:00';
+                const m = Math.floor(secs / 60);
+                const s = Math.floor(secs % 60);
+                return `${m}:${s.toString().padStart(2, '0')}`;
+            }
+
+            function updateTimeDisplay() {
+                if (!video) return;
+                timeDisplay.textContent = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`;
+            }
+
+            function updateProgress() {
+                if (!video || !video.duration) return;
+                const pct = (video.currentTime / video.duration) * 100;
+                progressFill.style.width = pct + '%';
+                updateTimeDisplay();
+            }
+
+            function setPlayState(playing) {
+                playIcon.style.display = playing ? 'none' : 'block';
+                pauseIcon.style.display = playing ? 'block' : 'none';
+                if (playing) { placeholder.classList.add('hidden'); }
+                else { placeholder.classList.remove('hidden'); }
+            }
+
+            // Play / Pause
+            playPauseBtn.addEventListener('click', () => {
+                if (video.paused) { video.play(); setPlayState(true); }
+                else { video.pause(); setPlayState(false); }
+            });
+
+            // Retroceder 10s
+            rewindBtn.addEventListener('click', () => {
+                if (!video) return;
+                video.currentTime = Math.max(0, video.currentTime - 10);
+                updateProgress();
+            });
+
+            // Avanzar 10s
+            forwardBtn.addEventListener('click', () => {
+                if (!video) return;
+                video.currentTime = Math.min(video.duration, video.currentTime + 10);
+                updateProgress();
+            });
+
+            // Barra de progreso — click
+            progressBar.addEventListener('click', (e) => {
+                if (!video || !video.duration) return;
+                const rect = progressBar.getBoundingClientRect();
+                const pct = (e.clientX - rect.left) / rect.width;
+                video.currentTime = pct * video.duration;
+                updateProgress();
+            });
+
+            // Barra de progreso — arrastre
+            let dragging = false;
+            progressBar.addEventListener('mousedown', () => { dragging = true; });
+            document.addEventListener('mousemove', (e) => {
+                if (!dragging || !video || !video.duration) return;
+                const rect = progressBar.getBoundingClientRect();
+                const pct = Math.min(1, Math.max(0, (e.clientX - rect.left) / rect.width));
+                video.currentTime = pct * video.duration;
+                updateProgress();
+            });
+            document.addEventListener('mouseup', () => { dragging = false; });
+
+            // Volumen
+            muteBtn.addEventListener('click', () => {
+                if (!video) return;
+                video.muted = !video.muted;
+                volumeIcon.style.display = video.muted ? 'none' : 'block';
+                muteIcon.style.display = video.muted ? 'block' : 'none';
+                volumeSlider.value = video.muted ? 0 : video.volume * 100;
+                volumeSlider.style.setProperty('--vol', (video.muted ? 0 : video.volume * 100) + '%');
+            });
+
+            volumeSlider.addEventListener('input', () => {
+                if (!video) return;
+                const val = volumeSlider.value;
+                video.volume = val / 100;
+                video.muted = val == 0;
+                volumeIcon.style.display = val == 0 ? 'none' : 'block';
+                muteIcon.style.display = val == 0 ? 'block' : 'none';
+                volumeSlider.style.setProperty('--vol', val + '%');
+            });
+
+            // Pantalla completa
+            fullscreenBtn.addEventListener('click', () => {
+                if (!document.fullscreenElement) {
+                    videoWrapper.requestFullscreen && videoWrapper.requestFullscreen();
+                } else {
+                    document.exitFullscreen && document.exitFullscreen();
+                }
+            });
+
+            // Eventos del video
+            video.addEventListener('timeupdate', updateProgress);
+            video.addEventListener('ended', () => setPlayState(false));
+            video.addEventListener('loadedmetadata', updateTimeDisplay);
+
+            // Click en el overlay para play
+            placeholder.addEventListener('click', () => {
+                video.play(); setPlayState(true);
+            });
+
+            // Click en el video para play/pause
+            video.addEventListener('click', () => {
+                if (video.paused) { video.play(); setPlayState(true); }
+                else { video.pause(); setPlayState(false); }
+            });
+
+            // Fix redundante: videoWrapper click (por si acaso)
+            videoWrapper.addEventListener('click', (e) => {
+                if (e.target === videoWrapper) {
+                    if (video.paused) { video.play(); setPlayState(true); }
+                    else { video.pause(); setPlayState(false); }
+                }
+            });
+        })();
+
+        console.log('Luxe Lashes ✨ — Video player activo');
     </script>
 </body>
-</html>
+</html> <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Lashes - Extensiones de Pestañas y Cursos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/LUXE LASHES 3.png" />
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rose-gold: #E8B4B8;
+    --soft-pink: #F8E8E8;
+    --blush: #F5D4D4;
+    --dusty-rose: #D4A5A5;
+    --champagne: #F7E7CE;
+    --mauve: #C9ADA7;
+    --cream: #FFF8F0;
+    --lilac: #E6D7E8;
+    --peach: #FFD7C4;
+    --dark-bg: #1a1614;
+    --dark-secondary: #2a2420;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, var(--soft-pink) 0%, var(--cream) 50%, var(--champagne) 100%);
+    color: #4a3f3f;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.logo, h1, h2, .footer-logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(26, 22, 20, 0.95);
+    backdrop-filter: blur(10px);
+    color: var(--cream);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(222, 200, 151, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo img {
+    max-width: 11rem;
+    height: auto;
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    color: var(--cream);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--rose-gold);
+    transition: width 0.3s;
+}
+
+.nav-link:hover { color: var(--rose-gold); }
+.nav-link:hover::after { width: 100%; }
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--rose-gold);
+    position: relative;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: var(--rose-gold);
+    transition: 0.3s;
+}
+
+.hamburger::before { top: -8px; }
+.hamburger::after { top: 8px; }
+
+/* Hero Section */
+.hero {
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--soft-pink) 0%, var(--blush) 30%, var(--champagne) 70%, var(--lilac) 100%);
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(232, 180, 184, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(230, 215, 232, 0.2) 0%, transparent 50%);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 60px 0;
+}
+
+.hero-text h1 {
+    font-size: 62px;
+    background: linear-gradient(135deg, #D4A5A5 0%, #ad898c 50%, #413a38 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #6b5858;
+    margin-bottom: 32px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(232, 180, 184, 0.4);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--dusty-rose);
+    border: 2px solid var(--dusty-rose);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-small {
+    padding: 12px 28px;
+    font-size: 14px;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.image-wrapper {
+    width: 80%;
+    height: 500px;
+    background: linear-gradient(135deg, var(--blush) 0%, var(--champagne) 100%);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(232, 180, 184, 0.3), 0 0 40px rgba(230, 215, 232, 0.2);
+    border: 2px solid rgba(232, 180, 184, 0.3);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.decoration-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.4;
+    filter: blur(40px);
+}
+
+.circle-1 { width: 200px; height: 200px; background-color: var(--rose-gold); bottom: -50px; right: -50px; }
+.circle-2 { width: 150px; height: 150px; background-color: var(--lilac); top: -40px; left: -40px; }
+
+/* Services Section */
+.services {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, var(--cream) 0%, var(--soft-pink) 100%);
+    position: relative;
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 52px;
+    background: linear-gradient(135deg, var(--dusty-rose) 0%, var(--rose-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: #6b5858;
+    font-weight: 400;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.service-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+    border: 2px solid rgba(232, 180, 184, 0.3);
+    box-shadow: 0 10px 30px rgba(232, 180, 184, 0.2);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(232, 180, 184, 0.4), 0 0 30px rgba(230, 215, 232, 0.3);
+    border-color: var(--rose-gold);
+}
+
+.service-image {
+    position: relative;
+    aspect-ratio: 3/4;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(232, 180, 184, 0.95), transparent 50%, rgba(245, 212, 212, 0.4));
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.service-card:hover .service-overlay { opacity: 0.95; }
+
+.service-content {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 24px;
+    color: white;
+}
+
+.service-content h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.service-description {
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s;
+    margin-bottom: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: rgba(26, 22, 20, 0.95);
+}
+
+.service-card:hover .service-description { opacity: 1; transform: translateY(0); }
+
+.service-content .btn {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s;
+    background: rgb(241, 234, 234);
+    color: var(--dusty-rose);
+}
+
+.service-card:hover .service-content .btn { opacity: 1; transform: translateY(0); }
+.service-content .btn:hover {
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    color: white;
+}
+
+/* ===== GALLERY SECTION - NUEVO DISEÑO ===== */
+.gallery {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--soft-pink) 0%, var(--blush) 50%, var(--champagne) 100%);
+    position: relative;
+}
+
+.gallery::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
+}
+
+/* Layout principal: texto izquierda, video derecha */
+.gallery-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Columna de texto */
+.gallery-text {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.gallery-text .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, rgba(232, 180, 184, 0.2), rgba(230, 215, 232, 0.2));
+    border: 1px solid rgba(232, 180, 184, 0.5);
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--dusty-rose);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.gallery-text .section-label::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--rose-gold), var(--dusty-rose));
+    flex-shrink: 0;
+}
+
+.gallery-text h2 {
+    font-size: 44px;
+    background: linear-gradient(135deg, var(--dusty-rose) 0%, #a07878 60%, #6b5858 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.gallery-text .gallery-description {
+    font-size: 16px;
+    color: #6b5858;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+.gallery-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.gallery-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.feature-dot {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 3px 12px rgba(232, 180, 184, 0.4);
+}
+
+.feature-dot svg {
+    stroke: white;
+}
+
+.gallery-feature-item span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5a4848;
+}
+
+.gallery-cta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+/* Columna del video */
+.gallery-video-col {
+    position: relative;
+}
+
+.video-container {
+    background: white;
+    border: 2px solid rgba(232, 180, 184, 0.4);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(232, 180, 184, 0.3), 0 0 40px rgba(230, 215, 232, 0.15);
+    transition: box-shadow 0.3s;
+}
+
+.video-container:hover {
+    box-shadow: 0 25px 70px rgba(232, 180, 184, 0.45), 0 0 50px rgba(230, 215, 232, 0.25);
+}
+
+/* El elemento de video */
+.video-player-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #2a1f1f 0%, #1a1414 100%);
+    overflow: hidden;
+}
+
+.main-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay de play inicial */
+.video-placeholder-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 20, 20, 0.45);
+    cursor: pointer;
+    transition: opacity 0.3s;
+    z-index: 2;
+}
+
+.video-placeholder-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.placeholder-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 30px rgba(232, 180, 184, 0.5);
+}
+
+.placeholder-icon svg {
+    stroke: white;
+    margin-left: 4px;
+}
+
+.placeholder-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 0.5px;
+}
+
+/* ===== CONTROLES PERSONALIZADOS ===== */
+.custom-controls {
+    padding: 18px 24px 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Barra de progreso */
+.progress-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.time-display {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--mauve);
+    white-space: nowrap;
+    min-width: 85px;
+    font-variant-numeric: tabular-nums;
+}
+
+.progress-bar-container {
+    flex: 1;
+    height: 5px;
+    background: rgba(232, 180, 184, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+}
+
+.progress-bar-container:hover .progress-fill::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    border-radius: 10px;
+    position: relative;
+    transition: width 0.1s linear;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 14px;
+    height: 14px;
+    background: var(--dusty-rose);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(212, 165, 165, 0.6);
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0;
+}
+
+/* Botones de control */
+.controls-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.controls-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ctrl-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    background: transparent;
+}
+
+.ctrl-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Botón principal play/pause — más grande */
+.ctrl-btn.play-pause {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    box-shadow: 0 4px 16px rgba(232, 180, 184, 0.5);
+}
+
+.ctrl-btn.play-pause svg {
+    stroke: white;
+}
+
+.ctrl-btn.play-pause:hover {
+    box-shadow: 0 6px 22px rgba(212, 165, 165, 0.7);
+}
+
+/* Botones retroceder/avanzar */
+.ctrl-btn.skip {
+    background: linear-gradient(135deg, rgba(232, 180, 184, 0.15), rgba(212, 165, 165, 0.15));
+    border: 1.5px solid rgba(232, 180, 184, 0.4);
+    color: var(--dusty-rose);
+}
+
+.ctrl-btn.skip svg {
+    stroke: var(--dusty-rose);
+}
+
+.ctrl-btn.skip:hover {
+    background: linear-gradient(135deg, rgba(232, 180, 184, 0.35), rgba(212, 165, 165, 0.35));
+    border-color: var(--rose-gold);
+}
+
+/* Botón volumen */
+.ctrl-btn.volume-btn {
+    background: transparent;
+    border: 1.5px solid rgba(232, 180, 184, 0.3);
+}
+
+.ctrl-btn.volume-btn svg {
+    stroke: var(--dusty-rose);
+}
+
+.ctrl-btn.volume-btn:hover {
+    background: rgba(232, 180, 184, 0.12);
+    border-color: var(--rose-gold);
+}
+
+/* Slider de volumen */
+.volume-slider-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+    max-width: 0;
+    transition: max-width 0.3s ease, opacity 0.3s;
+    opacity: 0;
+}
+
+.controls-right:hover .volume-slider-wrapper {
+    max-width: 100px;
+    opacity: 1;
+}
+
+.volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--rose-gold) var(--vol, 100%), rgba(232, 180, 184, 0.25) var(--vol, 100%));
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--dusty-rose);
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(212, 165, 165, 0.5);
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--dusty-rose);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 6px rgba(212, 165, 165, 0.5);
+}
+
+/* Botón pantalla completa */
+.ctrl-btn.fullscreen {
+    background: transparent;
+    border: 1.5px solid rgba(232, 180, 184, 0.3);
+}
+
+.ctrl-btn.fullscreen svg {
+    stroke: var(--dusty-rose);
+}
+
+.ctrl-btn.fullscreen:hover {
+    background: rgba(232, 180, 184, 0.12);
+    border-color: var(--rose-gold);
+}
+
+/* Decoración alrededor del video */
+.video-deco-top {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(230, 215, 232, 0.6) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(15px);
+    pointer-events: none;
+}
+
+.video-deco-bottom {
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(232, 180, 184, 0.4) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(20px);
+    pointer-events: none;
+}
+
+/* Courses Section */
+.courses {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--champagne) 0%, var(--soft-pink) 50%, var(--lilac) 100%);
+    position: relative;
+}
+
+.courses::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.course-card {
+    background: white;
+    border: 2px solid rgba(232, 180, 184, 0.3);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(232, 180, 184, 0.2);
+    transition: all 0.3s;
+}
+
+.course-card:hover {
+    box-shadow: 0 20px 40px rgba(232, 180, 184, 0.4), 0 0 30px rgba(230, 215, 232, 0.3);
+    transform: translateY(-5px);
+    border-color: var(--rose-gold);
+}
+
+.course-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 8px;
+    box-shadow: 0 4px 15px rgba(232, 180, 184, 0.3);
+}
+
+.course-number img { width: 200px; height: 200px; object-fit: contain; }
+
+.course-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--dusty-rose);
+}
+
+.course-duration { color: var(--mauve); margin-bottom: 12px; font-weight: 500; }
+.course-description { color: #6b5858; margin-bottom: 20px; line-height: 1.6; font-weight: 400; }
+
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dusty-rose);
+}
+
+.courses-benefits {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 232, 232, 0.9) 100%);
+    border: 2px solid var(--rose-gold);
+    border-radius: 20px;
+    padding: 48px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(232, 180, 184, 0.3);
+}
+
+.courses-benefits h3 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(135deg, var(--dusty-rose) 0%, var(--rose-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+}
+
+.benefit-value {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, var(--dusty-rose) 0%, var(--rose-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.benefit-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 auto 16px;
+    display: block;
+}
+
+.benefit-item p { font-weight: 400; font-size: 16px; color: #6b5858; }
+
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, var(--soft-pink) 0%, var(--blush) 100%);
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.contact-info { display: flex; flex-direction: column; gap: 32px; }
+
+.contact-item { display: flex; gap: 16px; }
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(232, 180, 184, 0.4);
+}
+
+.contact-icon svg { stroke: white; }
+
+.contact-item h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--dusty-rose);
+}
+
+.contact-item p { color: #6b5858; font-weight: 400; }
+
+.social-media h3 {
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--dusty-rose);
+}
+
+.social-icons { display: flex; gap: 16px; }
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--dusty-rose) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(232, 180, 184, 0.4);
+}
+
+.social-icon:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(232, 180, 184, 0.6); }
+.social-icon svg { stroke: white; }
+
+.contact-form {
+    background: white;
+    border: 2px solid rgba(232, 180, 184, 0.3);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(232, 180, 184, 0.2);
+}
+
+.form-group { margin-bottom: 16px; }
+
+.form-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid rgba(232, 180, 184, 0.3);
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s;
+    background-color: var(--cream);
+    color: #4a3f3f;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--rose-gold);
+    box-shadow: 0 0 0 3px rgba(232, 180, 184, 0.2);
+}
+
+.form-input::placeholder { color: var(--mauve); font-weight: 400; }
+textarea.form-input { resize: vertical; }
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, var(--dusty-rose) 0%, var(--mauve) 100%);
+    color: white;
+    padding: 60px 0 30px;
+    border-top: 2px solid var(--rose-gold);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo { font-size: 28px; margin-bottom: 16px; color: white; }
+.footer-col p { color: rgba(26, 22, 20, 0.95); font-weight: 400; line-height: 1.6; }
+.footer-col h4 { margin-bottom: 16px; font-family: 'Montserrat', sans-serif; font-weight: 600; color: white; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 8px; color: rgba(26, 22, 20, 0.95); }
+.footer-col ul li a { color: rgba(26, 22, 20, 0.95); text-decoration: none; transition: color 0.3s; font-weight: 400; }
+.footer-col ul li a:hover { color: white; }
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    text-align: center;
+    color: rgba(26, 22, 20, 0.95);
+    font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .gallery-showcase {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .gallery-text h2 { font-size: 34px; text-align: center; }
+    .gallery-text .section-label { margin: 0 auto; }
+    .gallery-text .gallery-description { text-align: center; }
+    .gallery-features { align-items: center; }
+    .gallery-cta { justify-content: center; }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px; left: 0; right: 0;
+        background-color: rgba(26, 22, 20, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        gap: 0;
+        padding: 20px;
+        display: none;
+        border-bottom: 1px solid rgba(222, 200, 151, 0.1);
+    }
+
+    .nav-menu.active { display: flex; }
+    .nav-link { padding: 12px 0; border-bottom: 1px solid rgba(222, 200, 151, 0.1); }
+    .hero-content { grid-template-columns: 1fr; gap: 40px; }
+    .hero-text h1 { font-size: 42px; }
+    .hero-text p { font-size: 16px; }
+    .image-wrapper { height: 400px; }
+    .section-header h2 { font-size: 38px; }
+    .services-grid, .courses-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    .courses-benefits { padding: 32px 20px; }
+    .benefits-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 { font-size: 32px; }
+    .section-header h2 { font-size: 32px; }
+    .hero-buttons { flex-direction: column; }
+    .btn { width: 100%; text-align: center; }
+    .logo { font-size: 26px; }
+}
+</style>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/LUXE LASHES 1.png" alt="LUXE LASHES" />
+                </div>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#galeria" class="nav-link">Galería</a>
+                <a href="#cursos" class="nav-link">Cursos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Realza tu Belleza Natural</h1>
+                    <p>Especialistas en extensiones de pestañas y formación profesional. 
+                    Transforma miradas con nuestros tratamientos de alta calidad y aprende 
+                    de los mejores en nuestros cursos certificados.</p>
+                    <div class="hero-buttons">
+                        <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                        <a href="#cursos" class="btn btn-secondary">Nuestros Cursos</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="Img/Mapeo de ojos.jpg" alt="Luxe Lashes">
+                    </div>
+                    <div class="decoration-circle circle-1"></div>
+                    <div class="decoration-circle circle-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Tratamientos profesionales para realzar tu belleza</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="1">
+                    <div class="service-image">
+                        <img src="Img/Pestañas 2D y 3D.jpg" alt="Extensiones Clásicas">
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <p class="service-description">Realza tu mirada con extensiones pestaña por pestaña para un look natural y elegante</p>
+                            <button class="btn btn-small">¡APRENDER AHORA!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card" data-service="2">
+                    <div class="service-image">
+                        <img src="Img/Remocion pestañas.jpg" alt="Volumen Ruso">
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <p class="service-description">Técnica avanzada que crea pestañas más densas y dramáticas con múltiples extensiones</p>
+                            <button class="btn btn-small">¡APRENDER AHORA!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card" data-service="3">
+                    <div class="service-image">
+                        <img src="Img/implementos lash.jpg" alt="Lifting de Pestañas">
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <p class="service-description">Curl permanente que levanta y define tus pestañas naturales hasta por 8 semanas</p>
+                            <button class="btn btn-small">¡APRENDER AHORA!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card" data-service="4">
+                    <div class="service-image">
+                        <img src="Img/Manual practica.jpg" alt="Diseño de Cejas">
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <p class="service-description">Perfilado, tinte y laminado para cejas perfectamente definidas</p>
+                            <button class="btn btn-small">¡APRENDER AHORA!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - NUEVO DISEÑO: texto izquierda, video derecha -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="gallery-showcase">
+
+                <!-- Columna izquierda: texto -->
+                <div class="gallery-text">
+                    <span class="section-label">Nuestra Galería</span>
+                    <h2>Descubre el Arte de Transformar Miradas</h2>
+                    <p class="gallery-description">
+                        Cada sesión es una experiencia única. Mira de cerca cómo nuestros expertos 
+                        trabajan con precisión y dedicación para crear resultados que superan expectativas. 
+                        Desde extensiones clásicas hasta el dramático volumen ruso, cada técnica 
+                        es aplicada con el mayor cuidado y profesionalismo.
+                    </p>
+
+                    <div class="gallery-features">
+                        <div class="gallery-feature-item">
+                            <div class="feature-dot">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Técnicas certificadas internacionalmente</span>
+                        </div>
+                        <div class="gallery-feature-item">
+                            <div class="feature-dot">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Materiales hipoalergénicos de alta calidad</span>
+                        </div>
+                        <div class="gallery-feature-item">
+                            <div class="feature-dot">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Resultados duraderos hasta 8 semanas</span>
+                        </div>
+                        <div class="gallery-feature-item">
+                            <div class="feature-dot">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Atención personalizada en cada visita</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-cta">
+                        <a href="#contacto" class="btn btn-primary">Reservar Cita</a>
+                        <a href="#cursos" class="btn btn-secondary">Ver Cursos</a>
+                    </div>
+                </div>
+
+                <!-- Columna derecha: video con controles personalizados -->
+                <div class="gallery-video-col">
+                    <div class="video-deco-top"></div>
+                    <div class="video-deco-bottom"></div>
+
+                    <div class="video-container" id="videoContainer">
+                        <div class="video-player-wrapper" id="videoWrapper">
+                            <!-- VIDEO PRINCIPAL — visible y reproducible -->
+                            <video id="mainVideo" class="main-video" preload="metadata">
+                                <source src="Img/Materiales 2.mov" type="video/quicktime">
+                                <source src="Img/Materiales 2.mov" type="video/mp4">
+                            </video>
+
+                            <!-- Overlay de play inicial (se oculta al dar play) -->
+                            <div class="video-placeholder-overlay" id="videoPlaceholder">
+                                <div class="placeholder-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                </div>
+                                <p class="placeholder-text">Presiona play para reproducir</p>
+                            </div>
+                        </div>
+
+                        <!-- Controles personalizados -->
+                        <div class="custom-controls" id="customControls">
+                            <!-- Barra de progreso -->
+                            <div class="progress-area">
+                                <span class="time-display" id="timeDisplay">0:00 / 0:00</span>
+                                <div class="progress-bar-container" id="progressBar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
+                            </div>
+
+                            <!-- Botones -->
+                            <div class="controls-row">
+                                <div class="controls-left">
+                                    <!-- Retroceder 10s -->
+                                    <button class="ctrl-btn skip" id="rewindBtn" title="Retroceder 10 segundos">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                            <polyline points="1 4 1 10 7 10"></polyline>
+                                            <path d="M3.51 15a9 9 0 1 0 .49-3.22"></path>
+                                            <text x="9" y="15" font-size="7" fill="currentColor" stroke="none" font-family="Montserrat" font-weight="700">10</text>
+                                        </svg>
+                                    </button>
+
+                                    <!-- Play / Pause -->
+                                    <button class="ctrl-btn play-pause" id="playPauseBtn" title="Reproducir / Pausar">
+                                        <svg id="playIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                        <svg id="pauseIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" style="display:none;">
+                                            <rect x="6" y="4" width="4" height="16"></rect>
+                                            <rect x="14" y="4" width="4" height="16"></rect>
+                                        </svg>
+                                    </button>
+
+                                    <!-- Avanzar 10s -->
+                                    <button class="ctrl-btn skip" id="forwardBtn" title="Avanzar 10 segundos">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                            <polyline points="23 4 23 10 17 10"></polyline>
+                                            <path d="M20.49 15a9 9 0 1 1-.49-3.22"></path>
+                                            <text x="9" y="15" font-size="7" fill="currentColor" stroke="none" font-family="Montserrat" font-weight="700">10</text>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="controls-right">
+                                    <!-- Volumen -->
+                                    <button class="ctrl-btn volume-btn" id="muteBtn" title="Silenciar / Activar sonido">
+                                        <svg id="volumeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                        </svg>
+                                        <svg id="muteIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" style="display:none;">
+                                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                            <line x1="23" y1="9" x2="17" y2="15"></line>
+                                            <line x1="17" y1="9" x2="23" y2="15"></line>
+                                        </svg>
+                                    </button>
+                                    <div class="volume-slider-wrapper">
+                                        <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="100">
+                                    </div>
+
+                                    <!-- Pantalla completa -->
+                                    <button class="ctrl-btn fullscreen" id="fullscreenBtn" title="Pantalla completa">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <polyline points="9 21 3 21 3 15"></polyline>
+                                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contáctanos</h2>
+                <p>Estamos aquí para ti</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.19 12 19.79 19.79 0 0 1 1.12 3.33 2 2 0 0 1 3.1 1.12h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+57 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ef7f0f8f1def2ebe6fbf2ffedf6fbedb0fdf1f3">[email&#160;protected]</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Calle 123 #45-67, Bogotá, Colombia</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Teléfono" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje" rows="4" class="form-input"></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-full" onclick="handleSubmit()">Enviar Mensaje</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">Luxe Lashes</h3>
+                    <p>Realzando tu belleza natural desde 2020</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Extensiones Clásicas</a></li>
+                        <li><a href="#">Volumen Ruso</a></li>
+                        <li><a href="#">Lifting</a></li>
+                        <li><a href="#">Diseño de Cejas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="#">Curso Básico</a></li>
+                        <li><a href="#">Volumen Ruso</a></li>
+                        <li><a href="#">Lifting & Laminado</a></li>
+                        <li><a href="#">Certificación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Horario</h4>
+                    <ul>
+                        <li>Lunes - Viernes: 9am - 7pm</li>
+                        <li>Sábados: 10am - 6pm</li>
+                        <li>Domingos: Cerrado</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxe Lashes. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // ====== MOBILE MENU ======
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const hamburger = menuToggle.querySelector('.hamburger');
+            hamburger.style.transform = navMenu.classList.contains('active') ? 'rotate(45deg)' : 'rotate(0)';
+        });
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    navMenu.classList.remove('active');
+                    menuToggle.querySelector('.hamburger').style.transform = 'rotate(0)';
+                }
+            });
+        });
+
+        // ====== SMOOTH SCROLL ======
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
+            });
+        });
+
+        // ====== SERVICE CARDS MOBILE ======
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('click', function() {
+                if (window.innerWidth <= 768) this.classList.toggle('active');
+            });
+        });
+        const style = document.createElement('style');
+        style.textContent = `
+            @media (max-width: 768px) {
+                .service-card.active .service-description,
+                .service-card.active .service-content .btn { opacity: 1; transform: translateY(0); }
+                .service-card.active .service-overlay { opacity: 0.9; }
+            }`;
+        document.head.appendChild(style);
+
+        // ====== NAVBAR SCROLL ======
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').style.boxShadow =
+                window.pageYOffset > 50 ? '0 4px 20px rgba(0,0,0,0.2)' : '0 2px 10px rgba(0,0,0,0.1)';
+        });
+
+        // ====== SCROLL ANIMATIONS ======
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.service-card, .course-card, .contact-item, .courses-benefits, .gallery-text, .video-container').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // ====== FORM ======
+        function handleSubmit() {
+            const inputs = document.querySelectorAll('.contact-form .form-input');
+            let isValid = true;
+            inputs.forEach(input => {
+                if (!input.value.trim()) { isValid = false; input.style.borderColor = '#ff4444'; }
+                else input.style.borderColor = 'var(--rose-gold)';
+            });
+            if (isValid) { alert('¡Gracias por tu mensaje! Te contactaremos pronto.'); inputs.forEach(i => i.value = ''); }
+            else alert('Por favor completa todos los campos.');
+        }
+
+        // ====== ACTIVE NAV ON SCROLL ======
+        const navLinks = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                if (window.pageYOffset >= section.offsetTop - 100 && window.pageYOffset < section.offsetTop - 100 + section.clientHeight)
+                    current = section.getAttribute('id');
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+            });
+        });
+        const activeStyle = document.createElement('style');
+        activeStyle.textContent = `.nav-link.active { color: var(--rose-gold); font-weight: 600; }`;
+        document.head.appendChild(activeStyle);
+
+        // ====== PAGE LOAD ======
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => { document.body.style.opacity = '1'; }, 100);
+        });
+
+        // ====== VIDEO PLAYER CON CONTROLES PERSONALIZADOS ======
+        (function() {
+            const video = document.getElementById('mainVideo');
+            if (!video) return;
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const playIcon = document.getElementById('playIcon');
+            const pauseIcon = document.getElementById('pauseIcon');
+            const rewindBtn = document.getElementById('rewindBtn');
+            const forwardBtn = document.getElementById('forwardBtn');
+            const progressBar = document.getElementById('progressBar');
+            const progressFill = document.getElementById('progressFill');
+            const timeDisplay = document.getElementById('timeDisplay');
+            const muteBtn = document.getElementById('muteBtn');
+            const volumeIcon = document.getElementById('volumeIcon');
+            const muteIcon = document.getElementById('muteIcon');
+            const volumeSlider = document.getElementById('volumeSlider');
+            const fullscreenBtn = document.getElementById('fullscreenBtn');
+            const videoWrapper = document.getElementById('videoWrapper');
+            const placeholder = document.getElementById('videoPlaceholder');
+
+            function formatTime(secs) {
+                if (isNaN(secs)) return '0:00';
+                const m = Math.floor(secs / 60);
+                const s = Math.floor(secs % 60);
+                return `${m}:${s.toString().padStart(2, '0')}`;
+            }
+
+            function updateTimeDisplay() {
+                if (!video) return;
+                timeDisplay.textContent = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`;
+            }
+
+            function updateProgress() {
+                if (!video || !video.duration) return;
+                const pct = (video.currentTime / video.duration) * 100;
+                progressFill.style.width = pct + '%';
+                updateTimeDisplay();
+            }
+
+            function setPlayState(playing) {
+                playIcon.style.display = playing ? 'none' : 'block';
+                pauseIcon.style.display = playing ? 'block' : 'none';
+                if (playing) { placeholder.classList.add('hidden'); }
+                else { placeholder.classList.remove('hidden'); }
+            }
+
+            // Play / Pause
+            playPauseBtn.addEventListener('click', () => {
+                if (video.paused) { video.play(); setPlayState(true); }
+                else { video.pause(); setPlayState(false); }
+            });
+
+            // Retroceder 10s
+            rewindBtn.addEventListener('click', () => {
+                if (!video) return;
+                video.currentTime = Math.max(0, video.currentTime - 10);
+                updateProgress();
+            });
+
+            // Avanzar 10s
+            forwardBtn.addEventListener('click', () => {
+                if (!video) return;
+                video.currentTime = Math.min(video.duration, video.currentTime + 10);
+                updateProgress();
+            });
+
+            // Barra de progreso — click
+            progressBar.addEventListener('click', (e) => {
+                if (!video || !video.duration) return;
+                const rect = progressBar.getBoundingClientRect();
+                const pct = (e.clientX - rect.left) / rect.width;
+                video.currentTime = pct * video.duration;
+                updateProgress();
+            });
+
+            // Barra de progreso — arrastre
+            let dragging = false;
+            progressBar.addEventListener('mousedown', () => { dragging = true; });
+            document.addEventListener('mousemove', (e) => {
+                if (!dragging || !video || !video.duration) return;
+                const rect = progressBar.getBoundingClientRect();
+                const pct = Math.min(1, Math.max(0, (e.clientX - rect.left) / rect.width));
+                video.currentTime = pct * video.duration;
+                updateProgress();
+            });
+            document.addEventListener('mouseup', () => { dragging = false; });
+
+            // Volumen
+            muteBtn.addEventListener('click', () => {
+                if (!video) return;
+                video.muted = !video.muted;
+                volumeIcon.style.display = video.muted ? 'none' : 'block';
+                muteIcon.style.display = video.muted ? 'block' : 'none';
+                volumeSlider.value = video.muted ? 0 : video.volume * 100;
+                volumeSlider.style.setProperty('--vol', (video.muted ? 0 : video.volume * 100) + '%');
+            });
+
+            volumeSlider.addEventListener('input', () => {
+                if (!video) return;
+                const val = volumeSlider.value;
+                video.volume = val / 100;
+                video.muted = val == 0;
+                volumeIcon.style.display = val == 0 ? 'none' : 'block';
+                muteIcon.style.display = val == 0 ? 'block' : 'none';
+                volumeSlider.style.setProperty('--vol', val + '%');
+            });
+
+            // Pantalla completa
+            fullscreenBtn.addEventListener('click', () => {
+                if (!document.fullscreenElement) {
+                    videoWrapper.requestFullscreen && videoWrapper.requestFullscreen();
+                } else {
+                    document.exitFullscreen && document.exitFullscreen();
+                }
+            });
+
+            // Eventos del video
+            video.addEventListener('timeupdate', updateProgress);
+            video.addEventListener('ended', () => setPlayState(false));
+            video.addEventListener('loadedmetadata', updateTimeDisplay);
+
+            // Click en el overlay para play
+            placeholder.addEventListener('click', () => {
+                video.play(); setPlayState(true);
+            });
+
+            // Click en el video para play/pause
+            video.addEventListener('click', () => {
+                if (video.paused) { video.play(); setPlayState(true); }
+                else { video.pause(); setPlayState(false); }
+            });
+
+            // Fix redundante: videoWrapper click (por si acaso)
+            videoWrapper.addEventListener('click', (e) => {
+                if (e.target === videoWrapper) {
+                    if (video.paused) { video.play(); setPlayState(true); }
+                    else { video.pause(); setPlayState(false); }
+                }
+            });
+        })();
+
+        console.log('Luxe Lashes ✨ — Video player activo');
+    </script>
+</body>
+</html> 
